@@ -216,6 +216,188 @@
   border-color:rgba(255,136,0,.45);
 }
 
+
+/* Akkordeons: weniger erschlagend, aber alle Inhalte bleiben vorhanden */
+.accordion-list {
+  display: grid;
+  gap: 12px;
+}
+.accordion-item {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255,255,255,.045);
+  overflow: hidden;
+}
+.accordion-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.accordion-item summary::-webkit-details-marker {
+  display: none;
+}
+.accordion-item summary::after {
+  content: "+";
+  color: var(--orange);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+}
+.accordion-item[open] summary::after {
+  content: "–";
+}
+.accordion-title {
+  display: grid;
+  gap: 5px;
+}
+.accordion-title strong {
+  font-size: 20px;
+  color: var(--text);
+}
+.accordion-title span {
+  color: #ffbf75;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.accordion-content {
+  padding: 0 20px 20px;
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.quick-card {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.045);
+  border-radius: 20px;
+  padding: 18px;
+}
+.quick-card strong {
+  display: block;
+  font-size: 19px;
+  margin-bottom: 6px;
+}
+.quick-card span {
+  color: #cfcfcf;
+  line-height: 1.45;
+}
+@media(max-width:900px) {
+  .quick-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Ausschusskarten: Desktop-Raster + ausklappbare Details */
+.committee-grid details.committee {
+  cursor: pointer;
+}
+.committee-grid details.committee summary {
+  list-style: none;
+  cursor: pointer;
+}
+.committee-grid details.committee summary::-webkit-details-marker {
+  display: none;
+}
+.committee-grid details.committee summary::after {
+  content: "Details öffnen +";
+  display: inline-flex;
+  margin-top: 14px;
+  color: #ffbf75;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.committee-grid details.committee[open] summary::after {
+  content: "Details schließen –";
+}
+.committee-more {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,.10);
+  color: #cfcfcf;
+  line-height: 1.55;
+}
+.committee-more p {
+  margin: 0;
+}
+
+
+/* Expandable cards: clean desktop grid, details only after opening */
+.expand-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+details.expand-card {
+  cursor: pointer;
+  min-height: 150px;
+}
+details.expand-card summary {
+  list-style: none;
+  cursor: pointer;
+}
+details.expand-card summary::-webkit-details-marker {
+  display: none;
+}
+details.expand-card .summary-inner {
+  display: grid;
+  gap: 10px;
+}
+details.expand-card .detail-toggle {
+  display: inline-flex;
+  margin-top: 16px;
+  color: #ffbf75;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+details.expand-card .detail-toggle::after {
+  content: " +";
+  margin-left: 4px;
+}
+details.expand-card[open] .detail-toggle::after {
+  content: " –";
+}
+details.expand-card[open] .detail-toggle .open-text {
+  display: none;
+}
+details.expand-card:not([open]) .detail-toggle .close-text {
+  display: none;
+}
+.expand-card-details {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,.10);
+  color: #cfcfcf;
+  line-height: 1.58;
+}
+.expand-card-details p {
+  margin: 0;
+}
+@media(max-width:1000px) {
+  .expand-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media(max-width:720px) {
+  .expand-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -277,14 +459,80 @@
 
     <section id="arbeit">
       <div class="wrap">
-        <div class="section-title"><div><h2>Meine politischen Schwerpunkte</h2><p>Aus dem Programm von PIRATEN & Humanisten: Transparenz, Bildung, Beteiligung, Mobilität, soziale Stadt, Bürgerrechte und Open Source.</p></div><a class="btn" href="#mitmachen">Mitmachen →</a></div>
-        <div class="grid-3">
-          <article class="card"><span class="tag">Demokratie & Transparenz</span><h3>Stadtratssitzungen online</h3><p>Öffentliche Sitzungen des Stadtrats und seiner Ausschüsse sollen live übertragen und anschließend als Video verfügbar sein.</p></article>
-          <article class="card"><span class="tag">Digitale Verwaltung</span><h3>Open Antrag & Beteiligung</h3><p>Bürgerinnen und Bürger sollen wichtige kommunale Themen digital und analog mitgestalten können.</p></article>
-          <article class="card"><span class="tag">Bildung & Jugend</span><h3>Schulen fit machen</h3><p>Moderne IT, starke SMV, Jugendstadtrat und kostenlose Zugänge zu Museen und Bildungseinrichtungen.</p></article>
-          <article class="card"><span class="tag">Mobilität</span><h3>ÖPNV, Radwege, weniger Autodruck</h3><p>Mehr Kapazität im ÖPNV, bessere Radinfrastruktur, faire Parkraumbewirtschaftung und Entlastung der Innenstadt.</p></article>
-          <article class="card"><span class="tag">Soziales</span><h3>Housing First & Sicherheit</h3><p>Wohnen als Grundlage für Teilhabe sowie ein kommunales Sicherheitsprogramm mit echten Hilfsangeboten.</p></article>
-          <article class="card"><span class="tag">Klima & Stadt</span><h3>Kühle Orte, Grünflächen, Solar</h3><p>Mehr Begrünung, Entsiegelung, klimaresiliente Quartiere und Förderung von Photovoltaik und Solarthermie.</p></article>
+        <div class="section-title">
+          <div>
+            <h2>Meine politischen Schwerpunkte</h2>
+            <p>Aus dem Programm von PIRATEN & Humanisten: Transparenz, Bildung, Beteiligung, Mobilität, soziale Stadt, Bürgerrechte und Open Source.</p>
+          </div>
+          <a class="btn" href="mailto:lukas.kueffner@piraten-und-humanisten.de?subject=Mitmachen%20Transparenzplattform">Mitmachen →</a>
+        </div>
+
+        <div class="expand-card-grid">
+          <details class="card expand-card">
+            <summary>
+              <span class="summary-inner">
+                <span class="tag">Demokratie & Transparenz</span>
+                <h3>Stadtratssitzungen online</h3>
+                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+              </span>
+            </summary>
+            <div class="expand-card-details"><p>Öffentliche Sitzungen des Stadtrats und seiner Ausschüsse sollen live übertragen und anschließend als Video verfügbar sein.</p></div>
+          </details>
+
+          <details class="card expand-card">
+            <summary>
+              <span class="summary-inner">
+                <span class="tag">Digitale Verwaltung</span>
+                <h3>Open Antrag & Beteiligung</h3>
+                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+              </span>
+            </summary>
+            <div class="expand-card-details"><p>Bürgerinnen und Bürger sollen wichtige kommunale Themen digital und analog mitgestalten können.</p></div>
+          </details>
+
+          <details class="card expand-card">
+            <summary>
+              <span class="summary-inner">
+                <span class="tag">Bildung & Jugend</span>
+                <h3>Schulen fit machen</h3>
+                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+              </span>
+            </summary>
+            <div class="expand-card-details"><p>Moderne IT, starke SMV, Jugendstadtrat und kostenlose Zugänge zu Museen und Bildungseinrichtungen.</p></div>
+          </details>
+
+          <details class="card expand-card">
+            <summary>
+              <span class="summary-inner">
+                <span class="tag">Mobilität</span>
+                <h3>ÖPNV, Radwege, weniger Autodruck</h3>
+                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+              </span>
+            </summary>
+            <div class="expand-card-details"><p>Mehr Kapazität im ÖPNV, bessere Radinfrastruktur, faire Parkraumbewirtschaftung und Entlastung der Innenstadt.</p></div>
+          </details>
+
+          <details class="card expand-card">
+            <summary>
+              <span class="summary-inner">
+                <span class="tag">Soziales</span>
+                <h3>Housing First & Sicherheit</h3>
+                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+              </span>
+            </summary>
+            <div class="expand-card-details"><p>Wohnen als Grundlage für Teilhabe sowie ein kommunales Sicherheitsprogramm mit echten Hilfsangeboten.</p></div>
+          </details>
+
+          <details class="card expand-card">
+            <summary>
+              <span class="summary-inner">
+                <span class="tag">Klima & Stadt</span>
+                <h3>Kühle Orte, Grünflächen, Solar</h3>
+                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+              </span>
+            </summary>
+            <div class="expand-card-details"><p>Mehr Begrünung, Entsiegelung, klimaresiliente Quartiere und Förderung von Photovoltaik und Solarthermie.</p></div>
+          </details>
         </div>
       </div>
     </section>
@@ -294,14 +542,73 @@
         <div class="section-title"><div><h2>Ausschüsse: Wo ich direkt mitarbeite</h2><p></p></div></div>
         <div class="card">
           <span class="tag">Ordentliche Mitgliedschaften</span>
-          <div class="committee-grid">
-            <div class="committee"><span class="type">Ausschuss</span><b>Personal und Organisation</b><p>Personal- und Versorgungsangelegenheiten, allgemeine Verwaltungs- und Organisationsfragen, Datenschutz und Digitalisierung der Stadtverwaltung.</p></div>
-            <div class="committee"><span class="type">Ausschuss</span><b>Bau- und Vergabeausschuss</b><p>Bauverwaltung und Vergaben von Leistungen für die gesamte Stadtverwaltung, soweit nicht andere Ausschüsse zuständig sind.</p></div>
-            <div class="committee"><span class="type">Ausschuss</span><b>Schulausschuss</b><p>Alle Angelegenheiten des Schulbereichs: Gebäude, Ausstattung, Schulentwicklung und Bildung vor Ort.</p></div>
-            <div class="committee"><span class="type">Werkausschuss</span><b>SUN</b><p>Stadtentwässerung und Umweltanalytik Nürnberg – Infrastruktur, Gebühren, Investitionen und Betrieb.</p></div>
-            <div class="committee"><span class="type">Werkausschuss</span><b>FSN</b><p>Frankenstadion Nürnberg – Betrieb, Investitionen, Vergaben und strategische Fragen rund um das Stadion.</p></div>
-            <div class="committee"><span class="type">Kommission</span><b>Sportkommission</b><p>Sportpolitik, Vereine, Sportflächen und Ehrenamt. Kommissionen beraten und bereiten politische Entscheidungen vor.</p></div>
-          </div>
+          <div class="expand-card-grid">
+            <details class="card expand-card">
+              <summary>
+                <span class="summary-inner">
+                  <span class="tag">Ausschuss</span>
+                  <h3>Personal und Organisation</h3>
+                  <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+                </span>
+              </summary>
+              <div class="expand-card-details"><p>Personal- und Versorgungsangelegenheiten, allgemeine Verwaltungs- und Organisationsfragen, Datenschutz und Digitalisierung der Stadtverwaltung.</p></div>
+            </details>
+
+            <details class="card expand-card">
+              <summary>
+                <span class="summary-inner">
+                  <span class="tag">Ausschuss</span>
+                  <h3>Bau- und Vergabeausschuss</h3>
+                  <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+                </span>
+              </summary>
+              <div class="expand-card-details"><p>Bauverwaltung und Vergaben von Leistungen für die gesamte Stadtverwaltung, soweit nicht andere Ausschüsse zuständig sind.</p></div>
+            </details>
+
+            <details class="card expand-card">
+              <summary>
+                <span class="summary-inner">
+                  <span class="tag">Ausschuss</span>
+                  <h3>Schulausschuss</h3>
+                  <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+                </span>
+              </summary>
+              <div class="expand-card-details"><p>Alle Angelegenheiten des Schulbereichs: Gebäude, Ausstattung, Schulentwicklung und Bildung vor Ort.</p></div>
+            </details>
+
+            <details class="card expand-card">
+              <summary>
+                <span class="summary-inner">
+                  <span class="tag">Werkausschuss</span>
+                  <h3>SUN</h3>
+                  <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+                </span>
+              </summary>
+              <div class="expand-card-details"><p>Stadtentwässerung und Umweltanalytik Nürnberg – Infrastruktur, Gebühren, Investitionen und Betrieb.</p></div>
+            </details>
+
+            <details class="card expand-card">
+              <summary>
+                <span class="summary-inner">
+                  <span class="tag">Werkausschuss</span>
+                  <h3>FSN</h3>
+                  <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+                </span>
+              </summary>
+              <div class="expand-card-details"><p>Frankenstadion Nürnberg – Betrieb, Investitionen, Vergaben und strategische Fragen rund um das Stadion.</p></div>
+            </details>
+
+            <details class="card expand-card">
+              <summary>
+                <span class="summary-inner">
+                  <span class="tag">Kommission</span>
+                  <h3>Sportkommission</h3>
+                  <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
+                </span>
+              </summary>
+              <div class="expand-card-details"><p>Sportpolitik, Vereine, Sportflächen und Ehrenamt. Kommissionen beraten und bereiten politische Entscheidungen vor.</p></div>
+            </details>
+          </div></div>
         </div>
         <div class="card" style="margin-top:16px">
           <span class="tag">Ausschussgemeinschaft</span>
@@ -344,12 +651,12 @@
         </div>
 
         <div class="grid-2" style="margin-top:16px">
-          <article class="card"><span class="tag">Beispielmonat Arbeitsbudget</span><div class="list">
+          <article class="card"><span class="tag">Beispielmonat Arbeitsbudget</span><details class="accordion-item" open style="margin-top:0"><summary><span class="accordion-title"><span>Details</span><strong>Beispielhafte Aufteilung</strong></span></summary><div class="accordion-content"><div class="list">
             <div class="row"><div><b>Mitarbeit & Recherche</b><span>Mitarbeit, Unterstützung und Ausschussvorbereitung</span></div><strong>620 €</strong></div>
             <div class="row"><div><b>IT, Server & Open Source</b><span>Nextcloud, Postiz, Monitoring, Backups</span></div><strong>85 €</strong></div>
             <div class="row"><div><b>Öffentlichkeitsarbeit</b><span>Grafiken, Video, Druck, Bürgerdialog</span></div><strong>140 €</strong></div>
             <div class="row"><div><b>Flexibel / Rücklage</b><span>Unvorhergesehenes und kleine Projekte</span></div><strong>55 €</strong></div>
-          </div></article>
+          </div></div></details></article>
           
         </div>
       </div>
