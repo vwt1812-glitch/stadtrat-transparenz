@@ -1032,9 +1032,9 @@ section.is-current h2 {
     width: 100% !important;
     max-width: 100% !important;
     margin-right: 0 !important;
-    font-size: clamp(32px, 9vw, 38px) !important;
-    line-height: 1.06 !important;
-    letter-spacing: -0.048em !important;
+    font-size: clamp(37px, 10.2vw, 43px) !important;
+    line-height: 1.045 !important;
+    letter-spacing: -0.058em !important;
     overflow: visible !important;
   }
 
@@ -1102,8 +1102,35 @@ section.is-current h2 {
 
 @media (max-width: 380px) {
   .hero-title {
-    font-size: clamp(31px, 8.6vw, 35px) !important;
-    letter-spacing: -0.052em !important;
+    font-size: clamp(34px, 9.8vw, 38px) !important;
+    letter-spacing: -0.055em !important;
+  }
+}
+
+
+
+/* FINAL OVERRIDE: keep the fixed mobile profile corner, but restore the larger mobile claim size from the better version. */
+@media (max-width: 720px) {
+  .hero-title {
+    font-size: clamp(37px, 10.2vw, 43px) !important;
+    line-height: 1.045 !important;
+    letter-spacing: -0.058em !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+  .hero-title span {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+  }
+  .hero-title span:first-child::after { content: "" !important; }
+}
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: clamp(34px, 9.8vw, 38px) !important;
+    letter-spacing: -0.055em !important;
   }
 }
 
