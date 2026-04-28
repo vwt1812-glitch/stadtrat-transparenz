@@ -990,6 +990,123 @@ section.is-current h2 {
   }
 }
 
+
+
+/* FINAL MOBILE WIDTH + CLAIM PATCH
+   Keeps the existing card sizes, aligns hero elements to the same mobile grid
+   as the committee/cards, and fixes the Android rounded-corner artefact. */
+@media (max-width: 720px) {
+  :root { --mobile-page-x: 14px; }
+
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: var(--mobile-page-x) !important;
+    padding-right: var(--mobile-page-x) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .hero,
+  .hero .wrap,
+  .hero-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Do not clip cards/shadows in the hero. Body still prevents horizontal scroll. */
+  .hero-grid {
+    overflow: visible !important;
+  }
+
+  /* Mobile claim: exactly two lines, a bit larger, but never wider than the cards. */
+  .hero-title {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    font-size: clamp(32px, 9vw, 38px) !important;
+    line-height: 1.06 !important;
+    letter-spacing: -0.048em !important;
+    overflow: visible !important;
+  }
+
+  .hero-title span {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+  }
+
+  .hero-title span:first-child::after {
+    content: "" !important;
+  }
+
+  /* Hero elements use the same available width as the normal page cards. */
+  .hero-actions,
+  .hero-actions .btn,
+  .profile-card,
+  .stats,
+  .stat,
+  .card,
+  .committee,
+  details.expand-card,
+  .bunte-section-card,
+  .calendar-card,
+  .cta {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    min-width: 0 !important;
+  }
+
+  .hero-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .hero-actions .btn {
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .profile-card {
+    border-radius: 28px !important;
+    overflow: hidden !important;
+    background: linear-gradient(135deg, rgba(255,255,255,.09), rgba(255,255,255,.035)), #121212 !important;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    contain: paint;
+  }
+
+  .portrait {
+    border-radius: 26px !important;
+    overflow: hidden !important;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
+    transform: translateZ(0);
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: clamp(31px, 8.6vw, 35px) !important;
+    letter-spacing: -0.052em !important;
+  }
+}
+
 </style>
 </head>
 <body>
