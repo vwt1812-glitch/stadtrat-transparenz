@@ -725,6 +725,271 @@ section, section[id], #arbeit, #ausschuesse, #termine, #transparenz, #mitmachen 
   }
 }
 
+/* HERO CLAIM RESPONSIVE FIX
+   Desktop/tablet: one line like the original layout.
+   Phone: exactly two controlled lines without clipping. */
+.hero-title span { display: inline; }
+.hero-title span:first-child::after { content: " "; }
+@media (max-width: 720px) {
+  .hero-title {
+    font-size: clamp(30px, 8.8vw, 40px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.045em !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+  .hero-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+  .hero-title span:first-child::after { content: ""; }
+}
+
+
+
+/* FINAL MOBILE HERO + OVERFLOW FIX
+   Desktop keeps the original one-line claim.
+   Mobile shows exactly two controlled lines without horizontal clipping. */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (min-width: 721px) {
+  .hero-title {
+    white-space: normal !important;
+  }
+  .hero-title span {
+    display: inline !important;
+    white-space: normal !important;
+  }
+  .hero-title span:first-child::after {
+    content: " " !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrap {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .hero {
+    overflow: hidden !important;
+  }
+
+  .hero .wrap {
+    padding-top: 30px !important;
+    padding-bottom: 34px !important;
+  }
+
+  .hero-grid {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-title {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(28px, 8.1vw, 34px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.045em !important;
+    overflow: visible !important;
+  }
+
+  .hero-title span {
+    display: block !important;
+    white-space: nowrap !important;
+    max-width: 100% !important;
+  }
+
+  .hero-title span:first-child::after {
+    content: "" !important;
+  }
+
+  .lead {
+    max-width: 100% !important;
+    font-size: clamp(18px, 5.6vw, 22px) !important;
+    line-height: 1.35 !important;
+  }
+
+  .hero-actions,
+  .hero-actions .btn,
+  .profile-card,
+  .stats,
+  .stat {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-actions .btn {
+    justify-content: center !important;
+    white-space: normal !important;
+  }
+
+  .profile-card {
+    overflow: hidden !important;
+  }
+}
+
+
+/* FINAL NAVIGATION + ACTIVE SECTION FIX */
+header { position: sticky !important; top: 0 !important; z-index: 9999 !important; background: rgba(7,7,7,.92) !important; backdrop-filter: blur(18px); }
+header .nav { min-height: 82px; }
+@media (min-width: 1001px) {
+  header nav[aria-label="Hauptnavigation"] { display: flex !important; visibility: visible !important; opacity: 1 !important; }
+  header nav[aria-label="Hauptnavigation"] a { color: #e9e9e9 !important; }
+  header nav[aria-label="Hauptnavigation"] a.active { color: var(--orange) !important; background: rgba(255,136,0,.16) !important; box-shadow: inset 0 -2px 0 var(--orange); }
+}
+section[id] { scroll-margin-top: 0 !important; }
+section.is-current .section-title h2,
+section.is-current > .wrap > h2,
+section.is-current > .wrap > .section-title h2 { color: var(--orange) !important; }
+@media (max-width: 1000px) { header nav[aria-label="Hauptnavigation"] { display: none !important; } }
+
+
+
+/* FINAL HEADER + ANCHOR FIX */
+:root { --dynamic-header-height: 96px; }
+html { scroll-padding-top: calc(var(--dynamic-header-height) + 18px) !important; }
+body { padding-top: var(--dynamic-header-height); overflow-x: hidden; }
+header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 99999 !important;
+  background: rgba(7,7,7,.94) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--line) !important;
+}
+header .nav {
+  height: auto !important;
+  min-height: 82px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  align-items: center;
+}
+header nav[aria-label="Hauptnavigation"] {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  gap: 10px;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+header nav[aria-label="Hauptnavigation"] a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: 1px solid transparent;
+  color: #f2f2f2 !important;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 950;
+}
+header nav[aria-label="Hauptnavigation"] a:hover,
+header nav[aria-label="Hauptnavigation"] a.active {
+  color: #ffbf75 !important;
+  background: rgba(255,136,0,.18) !important;
+  border-color: rgba(255,136,0,.34) !important;
+  box-shadow: none !important;
+}
+header nav[aria-label="Hauptnavigation"] a:focus-visible {
+  outline: 2px solid rgba(255,255,255,.9);
+  outline-offset: 3px;
+}
+section[id] { scroll-margin-top: calc(var(--dynamic-header-height) + 18px) !important; }
+section.is-current > .wrap > h2,
+section.is-current > .wrap > .section-title h2,
+section.is-current .section-title h2:first-child {
+  color: var(--orange) !important;
+}
+@media (max-width: 1000px) {
+  header .nav {
+    min-height: 0;
+    gap: 10px;
+    padding: 10px 14px 12px;
+  }
+  header .logo {
+    flex: 0 0 auto;
+  }
+  header .logo img {
+    height: 42px;
+    max-width: 265px;
+  }
+  header nav[aria-label="Hauptnavigation"] {
+    flex: 1 1 100%;
+    order: 3;
+    display: flex !important;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 2px 0 0;
+  }
+  header nav[aria-label="Hauptnavigation"]::-webkit-scrollbar { display: none; }
+  header nav[aria-label="Hauptnavigation"] a {
+    flex: 0 0 auto;
+    padding: 12px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+  }
+  header .nav > .btn { display: none !important; }
+}
+@media (max-width: 720px) {
+  .wrap { padding-left: 14px; padding-right: 14px; }
+  header .logo img { height: 38px; max-width: 245px; }
+}
+
+
+
+/* FINAL MOBILE HEADER + ACTIVE NAV ONLY FIX */
+/* Only the header navigation items get active/orange styling. Section headings stay neutral. */
+section.is-current > .wrap > h2,
+section.is-current > .wrap > .section-title h2,
+section.is-current .section-title h2:first-child,
+section.is-current h2 {
+  color: var(--text) !important;
+}
+
+@media (max-width: 720px) {
+  header .nav {
+    min-height: 72px !important;
+    padding: 10px 14px !important;
+    justify-content: flex-start !important;
+  }
+  header nav[aria-label="Hauptnavigation"] {
+    display: none !important;
+  }
+  header .logo img {
+    height: 42px !important;
+    max-width: 270px !important;
+  }
+  header .nav > .btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 430px) {
+  header .logo img {
+    height: 38px !important;
+    max-width: 245px !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -743,7 +1008,7 @@ section, section[id], #arbeit, #ausschuesse, #termine, #transparenz, #mitmachen 
       <div class="wrap">
         <div class="hero-grid">
           <div>
-            <h1>Transparenz schaffen.<br><span class="orange">Vertrauen stärken.</span></h1>
+            <h1 class="hero-title"><span>Transparenz schaffen.</span><span class="orange">Vertrauen stärken.</span></h1>
             <p class="lead">Meine Stadtratsarbeit für ein Nürnberg, das offen, gerecht, freiheitlich und zukunftsfähig ist.</p>
             <div class="hero-actions"><a class="btn primary" href="#termine">📅 Stadtratsalltag ansehen</a><a class="btn" href="#mitmachen">💡 Thema einbringen</a></div>
           </div>
@@ -1271,35 +1536,87 @@ section, section[id], #arbeit, #ausschuesse, #termine, #transparenz, #mitmachen 
 
 <script>
 (function () {
-  function getHeaderOffset() {
-    var header = document.querySelector('header');
-    return header ? Math.ceil(header.getBoundingClientRect().height) : 0;
+  const navLinks = Array.from(document.querySelectorAll('header nav[aria-label="Hauptnavigation"] a[href^="#"]'));
+  const clickableLinks = Array.from(document.querySelectorAll('a[href^="#"]'));
+  const sections = navLinks
+    .map(link => document.getElementById(link.getAttribute('href').slice(1)))
+    .filter(Boolean);
+
+  function updateHeaderHeight() {
+    const header = document.querySelector('header');
+    const height = header ? Math.ceil(header.getBoundingClientRect().height) : 0;
+    document.documentElement.style.setProperty('--dynamic-header-height', height + 'px');
+    document.body.style.paddingTop = height + 'px';
+    return height;
   }
 
-  function scrollToHash(hash, push) {
-    if (!hash || hash === '#') return;
-    var target = document.querySelector(hash);
-    if (!target) return;
-    var top = target.getBoundingClientRect().top + window.pageYOffset - getHeaderOffset() + 1;
-    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
-    if (push) history.pushState(null, '', hash);
+  function headerOffset() {
+    return updateHeaderHeight();
   }
 
-  document.querySelectorAll('header nav a[href^="#"], .hero-actions a[href^="#"], a.btn[href^="#"]').forEach(function (link) {
-    link.addEventListener('click', function (event) {
-      var hash = link.getAttribute('href');
-      var target = document.querySelector(hash);
-      if (!target) return;
-      event.preventDefault();
-      scrollToHash(hash, true);
+  function setActive(id) {
+    navLinks.forEach(link => {
+      const isActive = link.getAttribute('href') === '#' + id;
+      link.classList.toggle('active', isActive);
+      if (isActive) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
     });
+    sections.forEach(section => section.classList.toggle('is-current', section.id === id));
+  }
+
+  function scrollToTarget(hash, updateUrl = true) {
+    if (!hash || hash === '#') return;
+    const target = document.querySelector(hash);
+    if (!target) return;
+    const offset = headerOffset();
+    const top = target.getBoundingClientRect().top + window.pageYOffset - offset + 1;
+    window.scrollTo({ top: Math.max(0, Math.round(top)), behavior: 'smooth' });
+    setActive(hash.slice(1));
+    if (updateUrl) history.replaceState(null, '', hash);
+  }
+
+  clickableLinks.forEach(link => {
+    const hash = link.getAttribute('href');
+    if (!hash || hash === '#' || !document.querySelector(hash)) return;
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      scrollToTarget(hash, true);
+    }, true);
   });
 
-  if (window.location.hash) {
-    window.addEventListener('load', function () {
-      setTimeout(function () { scrollToHash(window.location.hash, false); }, 80);
+  function currentSectionId() {
+    const y = window.scrollY + headerOffset() + 12;
+    let current = sections[0] ? sections[0].id : 'start';
+    for (const section of sections) {
+      if (section.offsetTop <= y) current = section.id;
+    }
+    return current;
+  }
+
+  let ticking = false;
+  function scheduleActiveUpdate() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(() => {
+      setActive(currentSectionId());
+      ticking = false;
     });
   }
+
+  window.addEventListener('scroll', scheduleActiveUpdate, { passive: true });
+  window.addEventListener('resize', () => { updateHeaderHeight(); scheduleActiveUpdate(); });
+  window.addEventListener('orientationchange', () => setTimeout(() => { updateHeaderHeight(); scheduleActiveUpdate(); }, 250));
+  window.addEventListener('load', () => {
+    updateHeaderHeight();
+    if (window.location.hash && document.querySelector(window.location.hash)) {
+      setTimeout(() => scrollToTarget(window.location.hash, false), 120);
+    } else {
+      scheduleActiveUpdate();
+    }
+  });
+  updateHeaderHeight();
+  scheduleActiveUpdate();
 })();
 </script>
 
