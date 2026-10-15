@@ -1,0 +1,109 @@
+{
+  "hinweis": "Anträge und Anfragen von Lukas Küffner (PIRATEN & Humanisten) im Nürnberger Stadtrat, neueste zuerst. Quelle: Ratsinformationssystem der Stadt Nürnberg. status: offen | angenommen | teilweise | abgelehnt | nicht_uebernommen | bericht | zurueckgezogen | beantwortet",
+  "stand": "2026-10-15",
+  "antraege": [
+    {
+      "nummer": "AN/198/2026",
+      "titel": "Verbindliche Kernnachtruhe am Flughafen Nürnberg",
+      "art": "Antrag",
+      "datum": "11.09.2026",
+      "gremium": "Stadtrat",
+      "status": "offen",
+      "zusammenfassung": "Die Stadt Nürnberg soll sich für eine verbindliche Kernnachtruhe am Flughafen zwischen 0 und 5 Uhr einsetzen. Hintergrund: Die Zahl der Nachtflugbewegungen ist von 8.635 im Jahr 2023 auf 11.459 im Jahr 2025 gestiegen.",
+      "ergebnis": "Noch nicht behandelt.",
+      "links": [
+        {
+          "label": "Antrag im Ratsinformationssystem",
+          "url": "https://online-service2.nuernberg.de/buergerinfo/ag0050.asp?__kagnr=2368"
+        }
+      ]
+    },
+    {
+      "nummer": "AN/134/2026",
+      "titel": "Geschäftsordnung: Zwei Wortmeldungen pro Thema beibehalten",
+      "art": "Änderungsantrag",
+      "mit": "Die Linke, Ökologische Fraktion, politbande und Tierschutzpartei",
+      "datum": "21.07.2026",
+      "gremium": "Stadtrat",
+      "status": "nicht_uebernommen",
+      "zusammenfassung": "CSU, SPD und Grüne-Volt wollten die Geschäftsordnung so ändern, dass jedes Stadtratsmitglied im Stadtrat zu einem Thema regelmäßig nur noch einmal sprechen darf. Unser Änderungsantrag: Es bleibt bei zwei Wortmeldungen – im Stadtrat und in den Ausschüssen.",
+      "ergebnis": "Der Stadtrat hat am 22.07.2026 die Änderung in der Fassung von CSU, SPD und Grünen-Volt beschlossen (52 Ja, 12 Nein). Unser Änderungsantrag wurde damit nicht übernommen.",
+      "links": [
+        {
+          "label": "Antrag im Ratsinformationssystem",
+          "url": "https://online-service2.nuernberg.de/buergerinfo/ag0050.asp?__kagnr=2304"
+        },
+        {
+          "label": "Beschluss vom 22.07.2026",
+          "url": "https://online-service2.nuernberg.de/buergerinfo/to0050.asp?__ktonr=106943"
+        }
+      ]
+    },
+    {
+      "nummer": "AN/093/2026",
+      "titel": "Neutralitätsgebot beim Bürgerentscheid Frankenschnellweg",
+      "art": "Antrag",
+      "mit": "politbande, Tierschutzpartei und Linke Liste",
+      "datum": "01.06.2026",
+      "gremium": "Stadtrat",
+      "status": "bericht",
+      "zusammenfassung": "Alle Informationen der Stadt zum Bürgerentscheid über den Ausbau des Frankenschnellwegs sollen strikt neutral sein und die Argumente für und gegen den Ausbau im gleichen Umfang darstellen, wie es Art. 18a Abs. 15 der Bayerischen Gemeindeordnung verlangt.",
+      "ergebnis": "Die Verwaltung hat am 17.06.2026 im Stadtrat zu diesem und weiteren Anträgen zum Bürgerentscheid berichtet. Der Bericht wurde zur Kenntnis genommen.",
+      "links": [
+        {
+          "label": "Antrag im Ratsinformationssystem",
+          "url": "https://online-service2.nuernberg.de/buergerinfo/ag0050.asp?__kagnr=2263"
+        },
+        {
+          "label": "Behandlung am 17.06.2026",
+          "url": "https://online-service2.nuernberg.de/buergerinfo/to0050.asp?__ktonr=106561"
+        }
+      ]
+    },
+    {
+      "nummer": "AN/098/2026",
+      "titel": "Audioaufzeichnungen veröffentlichen, Livestream prüfen",
+      "art": "Antrag",
+      "datum": "25.05.2026",
+      "gremium": "Stadtrat",
+      "status": "abgelehnt",
+      "zusammenfassung": "Die bereits vorhandenen Audioaufzeichnungen der öffentlichen Sitzungen von Stadtrat und Ausschüssen sollen öffentlich zugänglich gemacht werden. Außerdem soll die Verwaltung ein Konzept für Videoübertragungen der öffentlichen Sitzungen erarbeiten.",
+      "ergebnis": "Am 22.07.2026 hat die Verwaltung im Stadtrat einen Zwischenbericht zum Livestream vorgelegt und dabei auf rechtliche und technische Voraussetzungen und die Haushaltslage verwiesen. In der Sitzung habe ich deshalb beantragt, wenigstens die bereits bestehenden Audioaufzeichnungen zu veröffentlichen. Das hat der Stadtrat mehrheitlich abgelehnt.",
+      "links": [
+        {
+          "label": "Antrag im Ratsinformationssystem",
+          "url": "https://online-service2.nuernberg.de/buergerinfo/ag0050.asp?__kagnr=2268"
+        },
+        {
+          "label": "Beschluss vom 22.07.2026",
+          "url": "https://online-service2.nuernberg.de/buergerinfo/to0050.asp?__ktonr=107019"
+        },
+        {
+          "label": "Bericht bei The Nuremberg Times",
+          "url": "https://www.nbtimes.de/post/livestream-stadtrat-n%C3%BCrnberg-antrag-f%C3%BCr-mehr-transparenz"
+        }
+      ]
+    },
+    {
+      "nummer": "AN/097/2026",
+      "titel": "Schülertreffs Amberger Straße und Ritter-von-Schuh-Platz erhalten",
+      "art": "Antrag",
+      "mit": "politbande, Tierschutzpartei und Linke Liste",
+      "datum": "21.05.2026",
+      "gremium": "Jugendhilfeausschuss",
+      "status": "bericht",
+      "zusammenfassung": "Die Schülertreffs in der Amberger Straße und am Ritter-von-Schuh-Platz sollen dauerhaft erhalten bleiben. Die sinkenden Buchungszahlen bilden den Bedarf nicht ab: Die Jugendsozialarbeit an Schulen wurde gekürzt, die Treffs stehen nicht im Kita-Portal, und die Amberger Straße wird fast ausschließlich von Kindern einer Förderschule genutzt. Dazu zehn Fragen an die Verwaltung – unter anderem zu Fördermitteln, zur UN-Behindertenrechtskonvention und dazu, ob Personal, Eltern und Jugendliche beteiligt wurden.",
+      "ergebnis": "Die Schließung der beiden letzten städtischen Schülertreffs hatte der Stadtrat bereits im November 2025 im Rahmen der Haushaltskonsolidierung beschlossen. Am 16.07.2026 hat die Verwaltung in der gemeinsamen Sitzung von Jugendhilfe- und Schulausschuss zu unseren Fragen berichtet.",
+      "links": [
+        {
+          "label": "Antrag im Ratsinformationssystem",
+          "url": "https://online-service2.nuernberg.de/buergerinfo/ag0050.asp?__kagnr=2267"
+        },
+        {
+          "label": "Bericht der Verwaltung",
+          "url": "https://online-service2.nuernberg.de/buergerinfo/vo0050.asp?__kvonr=30220"
+        }
+      ]
+    }
+  ]
+}

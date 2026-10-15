@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Transparenzplattform Lukas Küffner</title>
   <meta name="description" content="Transparenzplattform von Lukas Küffner – Stadtrat für PIRATEN & Humanisten in Nürnberg." />
+  <link rel="canonical" href="https://vwt1812-glitch.github.io/stadtrat-transparenz/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#070707" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="Transparenzplattform Lukas Küffner" />
+  <meta property="og:title" content="Lukas Küffner – Stadtrat in Nürnberg" />
+  <meta property="og:description" content="Termine, Ausschüsse, Anträge und Geld: Meine Stadtratsarbeit für PIRATEN &amp; Humanisten – offen einsehbar." />
+  <meta property="og:url" content="https://vwt1812-glitch.github.io/stadtrat-transparenz/" />
+  <meta property="og:image" content="https://vwt1812-glitch.github.io/stadtrat-transparenz/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Lukas Küffner – Transparenz schaffen. Vertrauen stärken." />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -12,7 +27,7 @@
     <div class="wrap nav">
       <a class="logo" href="#start"><img src="assets/logo.png" width="1323" height="341" alt="PIRATEN & Humanisten"></a>
       <nav aria-label="Hauptnavigation">
-        <a class="active" href="#start">Übersicht</a><a href="#arbeit">Meine Arbeit</a><a href="#ausschuesse">Ausschüsse</a><a href="#termine">Termine</a><a href="#transparenz">Transparenz</a>
+        <a class="active" href="#start">Übersicht</a><a href="#arbeit">Meine Arbeit</a><a href="#ausschuesse">Ausschüsse</a><a href="#antraege">Anträge</a><a href="#termine">Termine</a><a href="#transparenz">Geld &amp; Budget</a>
       </nav>
       <a class="btn primary" href="mailto:Lukas.kueffner@piraten-und-humanisten.de">💬 Kontakt</a>
     </div>
@@ -45,11 +60,11 @@
         </div>
         <div class="stats">
           <div class="stat"><div class="icon">🚀</div><div><small>Start Stadtrat</small><strong>Mai 2026</strong></div></div>
-          <div class="stat"><div class="icon">🏛</div><div><small>Direkt in Ausschüssen</small><strong>5</strong></div></div>
+          <div class="stat"><div class="icon">🏛</div><div><small>Ausschüsse + Kommission</small><strong>5 + 1</strong></div></div>
           <div class="stat"><div class="icon green">€</div><div><small>Arbeitsbudget</small><strong>1.050 €/Monat</strong></div></div>
           <div class="stat"><div class="icon green">€</div><div><small>Entschädigung</small><strong>2.549 €/Monat</strong></div></div>
-          <div class="stat"><div class="icon purple">📅</div><div><small>Stadtratskalender</small><strong>Live</strong></div></div>
-          <div class="stat"><div class="icon blue">🔓</div><div><small>Prinzip</small><strong>Offen</strong></div></div>
+          <div class="stat"><div class="icon purple">📅</div><div><small>Termine in den nächsten 30 Tagen</small><strong id="statTermine">–</strong></div></div>
+          <div class="stat"><div class="icon blue">🧾</div><div><small>Arbeitsbudget ausgegeben</small><strong>0 €</strong></div></div>
         </div>
       </div>
     </section>
@@ -64,79 +79,49 @@
           <a class="btn" href="#mitmachen">Thema einbringen →</a>
         </div>
 
-        <div class="expand-card-grid">
-          <details class="card expand-card">
-            <summary>
-              <span class="summary-inner">
-                <span class="tag">Demokratie & Transparenz</span>
-                <h3>Stadtratssitzungen online</h3>
-                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
-              </span>
-            </summary>
-            <div class="expand-card-details"><p>Öffentliche Sitzungen des Stadtrats und seiner Ausschüsse sollen live übertragen und anschließend als Video verfügbar sein.</p></div>
-          </details>
+        <div class="card-grid">
+          <article class="card topic-card">
+            <span class="tag">Demokratie & Transparenz</span>
+            <h3>Stadtratssitzungen online</h3>
+            <p>Öffentliche Sitzungen des Stadtrats und seiner Ausschüsse sollen live übertragen und anschließend als Video verfügbar sein.</p>
+          </article>
 
-          <details class="card expand-card">
-            <summary>
-              <span class="summary-inner">
-                <span class="tag">Digitale Verwaltung</span>
-                <h3>Open Antrag & Beteiligung</h3>
-                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
-              </span>
-            </summary>
-            <div class="expand-card-details"><p>Bürgerinnen und Bürger sollen wichtige kommunale Themen digital und analog mitgestalten können.</p></div>
-          </details>
+          <article class="card topic-card">
+            <span class="tag">Digitale Verwaltung</span>
+            <h3>Open Antrag & Beteiligung</h3>
+            <p>Bürgerinnen und Bürger sollen wichtige kommunale Themen digital und analog mitgestalten können.</p>
+          </article>
 
-          <details class="card expand-card">
-            <summary>
-              <span class="summary-inner">
-                <span class="tag">Bildung & Jugend</span>
-                <h3>Schulen fit machen</h3>
-                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
-              </span>
-            </summary>
-            <div class="expand-card-details"><p>Moderne IT, starke SMV, Jugendstadtrat und kostenlose Zugänge zu Museen und Bildungseinrichtungen.</p></div>
-          </details>
+          <article class="card topic-card">
+            <span class="tag">Bildung & Jugend</span>
+            <h3>Schulen fit machen</h3>
+            <p>Moderne IT, starke SMV, Jugendstadtrat und kostenlose Zugänge zu Museen und Bildungseinrichtungen.</p>
+          </article>
 
-          <details class="card expand-card">
-            <summary>
-              <span class="summary-inner">
-                <span class="tag">Mobilität</span>
-                <h3>ÖPNV, Radwege, weniger Autodruck</h3>
-                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
-              </span>
-            </summary>
-            <div class="expand-card-details"><p>Mehr Kapazität im ÖPNV, bessere Radinfrastruktur, faire Parkraumbewirtschaftung und Entlastung der Innenstadt.</p></div>
-          </details>
+          <article class="card topic-card">
+            <span class="tag">Mobilität</span>
+            <h3>ÖPNV, Radwege, weniger Autodruck</h3>
+            <p>Mehr Kapazität im ÖPNV, bessere Radinfrastruktur, faire Parkraumbewirtschaftung und Entlastung der Innenstadt.</p>
+          </article>
 
-          <details class="card expand-card">
-            <summary>
-              <span class="summary-inner">
-                <span class="tag">Soziales</span>
-                <h3>Housing First & Sicherheit</h3>
-                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
-              </span>
-            </summary>
-            <div class="expand-card-details"><p>Wohnen als Grundlage für Teilhabe sowie ein kommunales Sicherheitsprogramm mit echten Hilfsangeboten.</p></div>
-          </details>
+          <article class="card topic-card">
+            <span class="tag">Soziales</span>
+            <h3>Housing First & Sicherheit</h3>
+            <p>Wohnen als Grundlage für Teilhabe sowie ein kommunales Sicherheitsprogramm mit echten Hilfsangeboten.</p>
+          </article>
 
-          <details class="card expand-card">
-            <summary>
-              <span class="summary-inner">
-                <span class="tag">Klima & Stadt</span>
-                <h3>Kühle Orte, Grünflächen, Solar</h3>
-                <span class="detail-toggle"><span class="open-text">Details öffnen</span><span class="close-text">Details schließen</span></span>
-              </span>
-            </summary>
-            <div class="expand-card-details"><p>Mehr Begrünung, Entsiegelung, klimaresiliente Quartiere und Förderung von Photovoltaik und Solarthermie.</p></div>
-          </details>
+          <article class="card topic-card">
+            <span class="tag">Klima & Stadt</span>
+            <h3>Kühle Orte, Grünflächen, Solar</h3>
+            <p>Mehr Begrünung, Entsiegelung, klimaresiliente Quartiere und Förderung von Photovoltaik und Solarthermie.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="ausschuesse">
       <div class="wrap">
-        <div class="section-title"><div><h2>Ausschüsse: Wo ich direkt mitarbeite</h2></div></div>
+        <div class="section-title"><div><h2>Ausschüsse: Wo ich direkt mitarbeite</h2><p>Meine Sitze in den Ausschüssen erhalte ich über die politbande. Wie das zusammenhängt, steht unten bei der Bunten AG.</p></div></div>
         <div class="card">
           <span class="tag">Ordentliche Mitgliedschaften</span>
           <div class="expand-card-grid">
@@ -207,19 +192,28 @@
             </details>
           </div></div>
         <div class="card bunte-section-card">
-          <span class="tag">Ausschussgemeinschaft</span>
+          <span class="tag">Zusammenarbeit im Stadtrat</span>
           <div class="bunte-card">
             <div>
-              <h3>Bunte AG: Ausschussgemeinschaft</h3>
-              <p>Die Bunte AG ist eine pragmatische Ausschussgemeinschaft aus politbande, PIRATEN & Humanisten, Tierschutzpartei und Linke Liste. Sie dient dazu, dass kleinere Gruppen im Stadtrat arbeitsfähig in Ausschüssen vertreten sind.</p>
+              <h3>Bunte AG: unsere interne Arbeitsgemeinschaft</h3>
+              <p>Mit nur einem Sitz im Stadtrat hätten PIRATEN & Humanisten allein keinen Platz in den Ausschüssen. Deshalb arbeiten wir mit politbande, Tierschutzpartei und Linke Liste zusammen: fünf Stadträt:innen mit einem gemeinsamen Büro und einem gemeinsamen Budget.</p>
+              <p>Offiziell ist die Bunte AG keine Ausschussgemeinschaft. Die Ausschusssitze laufen über die politbande, die Zusammenarbeit regeln wir intern.</p>
             </div>
             <div class="bunte-highlight">
-              <span class="tag">Arbeitsfähigkeit</span>
-              <h3>Mehr Einblick in Ausschüsse</h3>
-              <p>So können Themen früher begleitet, kontrolliert und politisch eingebracht werden.</p>
+              <span class="tag">Mein Anteil</span>
+              <h3>Ein Fünftel des Budgets</h3>
+              <p>Vom gemeinsamen Budget der Bunten AG steht mir ein Fünftel zu: 1.050 € im Monat. Was davon ausgegeben wird, steht <a class="text-link" href="#transparenz">unten bei Geld &amp; Budget</a>.</p>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="antraege">
+      <div class="wrap">
+        <div class="section-title"><div><span class="section-kicker">Anträge &amp; Anfragen</span><h2>Was ich in den Stadtrat einbringe.</h2><p>Jeder Antrag und jede Anfrage – mit dem, was daraus geworden ist. Auch dann, wenn es nicht geklappt hat. Quelle: <a class="text-link" href="https://online-service2.nuernberg.de/buergerinfo/ag0040.asp" target="_blank" rel="noopener">Ratsinformationssystem der Stadt Nürnberg</a>.</p></div></div>
+        <div id="antraegeStatus" class="notice">Anträge werden geladen …</div>
+        <div id="antraegeList" class="antrag-list"></div>
       </div>
     </section>
 
@@ -235,7 +229,6 @@
             <div id="calendarEvents" class="calendar-list"></div>
             <label for="calendarExpand" class="btn calendar-toggle" hidden><span class="more">Alle Termine anzeigen</span><span class="less">Weniger Termine anzeigen</span></label>
             <div class="calendar-footer">
-              <a class="btn" href="webcal://cloud.rpiblog.de/remote.php/dav/public-calendars/cRR6cHi9SMf4Gtd4?export">📅 Kalender abonnieren</a>
               <small id="calendarUpdated"></small>
             </div>
           </article>
@@ -244,9 +237,10 @@
 
     <section id="transparenz">
       <div class="wrap">
+        <div class="section-title"><div><span class="section-kicker">Geld &amp; Budget</span><h2>Was ich bekomme – und wofür es ausgegeben wird.</h2><p>Zwei Töpfe, sauber getrennt: Die Aufwandsentschädigung ist mein persönliches Einkommen als Stadtrat. Das Arbeitsbudget ist für die politische Arbeit da.</p></div></div>
         <div class="grid-2 money-grid">
-          <article class="card budget-total money-card"><span class="tag">Aufwandsentschädigung</span><h2 class="money-title">2.549 € pro Monat</h2><strong class="money-emphasis">steuerpflichtig</strong><p>Als ehrenamtliches Stadtratsmitglied erhalte ich eine monatliche Aufwandsentschädigung in Höhe von 2.549 €. Diese wird als selbstständige Tätigkeit versteuert. Die Aufwandsentschädigung ist von dem zusätzlichen Arbeitsbudget über die Ausschussgemeinschaft zu unterscheiden.</p></article>
-          <article class="card budget-total money-card"><span class="tag">Offenes Arbeitsbudget</span><h2 class="money-title">1.050 € pro Monat</h2><strong class="money-emphasis">für Arbeit</strong><p>Monatliches Budget über die Ausschussgemeinschaft für Mitarbeit, Recherche, Open-Source-Infrastruktur, Öffentlichkeitsarbeit und Bürgerdialog. Später soll dieser Bereich automatisch aus Actual Budget gespeist werden.</p></article>
+          <article class="card budget-total money-card"><span class="tag">Aufwandsentschädigung</span><h2 class="money-title">2.549 € pro Monat</h2><strong class="money-emphasis">steuerpflichtig</strong><p>Als ehrenamtliches Stadtratsmitglied erhalte ich eine monatliche Aufwandsentschädigung in Höhe von 2.549 €. Diese wird als selbstständige Tätigkeit versteuert. Sie ist vom Arbeitsbudget der Bunten AG getrennt.</p></article>
+          <article class="card budget-total money-card"><span class="tag">Arbeitsbudget · Anteil Bunte AG</span><h2 class="money-title">1.050 € pro Monat</h2><strong class="money-emphasis">für Arbeit</strong><p>Mein Fünftel am gemeinsamen Budget der Bunten AG – für Mitarbeit, Recherche, Open-Source-Infrastruktur, Öffentlichkeitsarbeit und Bürgerdialog. Später soll dieser Bereich automatisch aus Actual Budget gespeist werden.</p></article>
         </div>
 
         <div class="budget-details">
@@ -288,6 +282,7 @@
     const eventsEl = document.getElementById("calendarEvents");
     const toggleEl = document.querySelector(".calendar-toggle");
     const updatedEl = document.getElementById("calendarUpdated");
+    const statTermineEl = document.getElementById("statTermine");
     const TZ = "Europe/Berlin";
     const VISIBLE_EVENTS = 5;
 
@@ -344,6 +339,8 @@
         const data = await res.json();
         const now = Date.now();
         const events = (data.events || []).filter((e) => !hasEnded(e, now));
+        const in30Days = now + 30 * 86400000;
+        statTermineEl.textContent = events.filter((e) => toDate(e.start, e.allDay).getTime() <= in30Days).length;
 
         if (data.updated) {
           updatedEl.textContent = "Stand: " + new Date(data.updated).toLocaleString("de-DE", {
@@ -359,11 +356,55 @@
         toggleEl.hidden = events.length <= VISIBLE_EVENTS;
       } catch (error) {
         console.warn("Termine konnten nicht geladen werden:", error);
-        statusEl.textContent = "Die Termine können gerade nicht angezeigt werden. Der Kalender kann aber direkt abonniert werden.";
+        statusEl.textContent = "Die Termine können gerade nicht angezeigt werden. Bitte später noch einmal versuchen.";
       }
     }
 
     loadCalendar();
+
+    // Anträge & Anfragen aus data/antraege.json
+    const STATUS_LABELS = {
+      offen: "Offen", angenommen: "Angenommen", teilweise: "Teilweise angenommen",
+      abgelehnt: "Abgelehnt", gescheitert: "Gescheitert", nicht_uebernommen: "Nicht übernommen",
+      bericht: "Bericht der Verwaltung", zurueckgezogen: "Zurückgezogen", beantwortet: "Beantwortet"
+    };
+
+    function formatAntrag(a) {
+      const status = STATUS_LABELS[a.status] ? a.status : "offen";
+      const meta = [a.nummer, a.art, a.datum, a.gremium].filter(Boolean).map(escapeHTML).join(" · ");
+      const links = (a.links || [])
+        .filter((l) => /^https:\/\//.test(l.url))
+        .map((l) => `<a class="text-link" href="${escapeHTML(l.url)}" target="_blank" rel="noopener">${escapeHTML(l.label)} ↗</a>`)
+        .join("");
+      return `<article class="card antrag">
+        <div class="antrag-head"><span class="antrag-status status-${status}">${STATUS_LABELS[status]}</span>${meta ? `<span class="antrag-meta">${meta}</span>` : ""}</div>
+        <h3>${escapeHTML(a.titel)}</h3>
+        ${a.mit ? `<p class="antrag-mit">Gemeinsam mit ${escapeHTML(a.mit)}</p>` : ""}
+        ${a.zusammenfassung ? `<p>${escapeHTML(a.zusammenfassung)}</p>` : ""}
+        ${a.ergebnis ? `<p class="antrag-ergebnis"><b>Ergebnis:</b> ${escapeHTML(a.ergebnis)}</p>` : ""}
+        ${links ? `<div class="antrag-links">${links}</div>` : ""}
+      </article>`;
+    }
+
+    async function loadAntraege() {
+      const statusBox = document.getElementById("antraegeStatus");
+      try {
+        const res = await fetch("data/antraege.json", { cache: "no-cache" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const antraege = (await res.json()).antraege || [];
+        if (!antraege.length) {
+          statusBox.textContent = "Noch keine Anträge eingetragen.";
+          return;
+        }
+        statusBox.hidden = true;
+        document.getElementById("antraegeList").innerHTML = antraege.map(formatAntrag).join("");
+      } catch (error) {
+        console.warn("Anträge konnten nicht geladen werden:", error);
+        statusBox.textContent = "Die Anträge können gerade nicht angezeigt werden. Bitte später noch einmal versuchen.";
+      }
+    }
+
+    loadAntraege();
   </script>
 
 <script>
