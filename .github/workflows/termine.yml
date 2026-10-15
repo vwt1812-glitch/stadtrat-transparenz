@@ -11,6 +11,7 @@ on:
       - "assets/render.mjs"
       - "data/antraege.json"
       - "data/ausschuesse.json"
+      - "data/budget.json"
       - ".github/workflows/termine.yml"
       - "package.json"
       - "package-lock.json"

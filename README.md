@@ -15,6 +15,7 @@ Läuft als statische Seite über GitHub Pages: https://vwt1812-glitch.github.io/
 | `data/termine.json` | Termine – automatisch, **nicht von Hand bearbeiten** |
 | `data/antraege.json` | Anträge – teils automatisch, Texte von Hand |
 | `data/ausschuesse.json` | Ausschüsse und Kommission |
+| `data/budget.json` | Arbeitsbudget: Anspruch, Auszahlungen, Ausgaben |
 | `scripts/` | Abruf von Kalender und Ratsinformationssystem, Vorab-Rendern |
 | `test/` | Tests mit echten Seiten aus dem Ratsinformationssystem (`npm test`) |
 
@@ -61,8 +62,16 @@ und dem Hinweis „Zusammenfassung folgt“ ein. Danach in `data/antraege.json` 
 
 ## Arbeitsbudget
 
-Der Stand steht direkt in `index.html` (Abschnitt `#transparenz` und die Kachel „Arbeitsbudget ausgegeben“).
-Später soll er automatisch aus Actual Budget kommen.
+Der Stand steht in `data/budget.json` und erscheint im Überblick oben und in der Budget-Karte.
+Einzelne Ausgaben kommen in die Liste `ausgaben`:
+
+```json
+"ausgaben": [
+  { "datum": "15.11.2026", "zweck": "Minijob Mitarbeit November", "betrag": 520 }
+]
+```
+
+`ausgezahlt` und `ausgegeben` sind die Summen in Euro. Später soll die Datei automatisch aus Actual Budget kommen.
 
 ## Lokal entwickeln
 
