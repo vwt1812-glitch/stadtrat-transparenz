@@ -1,0 +1,17 @@
+{
+  "hinweis": "Anträge und Anfragen von Lukas Küffner im Nürnberger Stadtrat. Neueste zuerst. status: offen | angenommen | teilweise | abgelehnt | gescheitert | zurueckgezogen | beantwortet",
+  "antraege": [
+    {
+      "titel": "Sitzungen streamen und Audioaufzeichnungen veröffentlichen",
+      "art": "Antrag",
+      "datum": "2026",
+      "gremium": "",
+      "status": "gescheitert",
+      "zusammenfassung": "Die bereits vorhandenen Audioaufzeichnungen der öffentlichen Sitzungen sollen für Bürgerinnen und Bürger freigegeben werden. Außerdem soll die Verwaltung ein Konzept für einen Livestream der Stadtrats- und Ausschusssitzungen erarbeiten.",
+      "ergebnis": "Der Antrag ist gescheitert. Die Verwaltung hatte Kosten von bis zu 63.000 € im Jahr veranschlagt.",
+      "links": [
+        { "label": "Bericht bei The Nuremberg Times", "url": "https://www.nbtimes.de/post/livestream-stadtrat-n%C3%BCrnberg-antrag-f%C3%BCr-mehr-transparenz" }
+      ]
+    }
+  ]
+}

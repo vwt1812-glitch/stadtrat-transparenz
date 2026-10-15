@@ -97,8 +97,11 @@ section { position:relative; padding:56px 0; }
 .card h3 { margin:0; font-size:22px; line-height:1.15; letter-spacing:-.025em; }
 .card p { color:#cfcfcf; line-height:1.6; margin:12px 0 0; }
 
-/* Ausklappbare Karten (Schwerpunkte, Ausschüsse) */
-.expand-card-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+/* Kartenraster (Schwerpunkte, Ausschüsse) */
+.card-grid, .expand-card-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.topic-card .tag { margin-bottom:12px; }
+
+/* Ausklappbare Karten (Ausschüsse) */
 details.expand-card { cursor:pointer; min-height:150px; }
 details.expand-card summary { list-style:none; cursor:pointer; }
 details.expand-card summary::-webkit-details-marker { display:none; }
@@ -117,6 +120,18 @@ details.expand-card:not([open]) .detail-toggle .close-text { display:none; }
 .bunte-highlight { padding:24px; background:linear-gradient(135deg,rgba(255,136,0,.14),rgba(255,255,255,.035)); border:1px solid rgba(255,136,0,.24); border-radius:24px; }
 .bunte-highlight p { margin-bottom:0; }
 .text-link { color:#ffbf75; text-decoration:underline; text-underline-offset:3px; }
+
+/* ---------- Anträge & Anfragen ---------- */
+.antrag-list { display:grid; gap:14px; }
+.antrag-head { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; margin-bottom:12px; }
+.antrag-status { display:inline-flex; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.05em; border:1px solid; }
+.status-offen { color:#ffd3a0; background:rgba(255,136,0,.12); border-color:rgba(255,136,0,.3); }
+.status-angenommen, .status-beantwortet { color:#b9f29a; background:rgba(107,211,66,.12); border-color:rgba(107,211,66,.35); }
+.status-teilweise { color:#9fd4ff; background:rgba(58,165,255,.12); border-color:rgba(58,165,255,.35); }
+.status-abgelehnt, .status-gescheitert, .status-zurueckgezogen { color:#ffb4a8; background:rgba(255,90,70,.12); border-color:rgba(255,90,70,.35); }
+.antrag-meta { color:var(--muted); font-size:14px; font-weight:700; }
+.antrag .antrag-ergebnis { color:#e8e8e8; }
+.antrag-links { display:flex; flex-wrap:wrap; gap:16px; margin-top:14px; font-weight:700; }
 
 /* ---------- Termine ---------- */
 .termine-section .section-title p { max-width:820px; }
@@ -178,6 +193,13 @@ footer nav { display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify
 footer nav a { border-radius:16px; color:#b7b7b7; font-size:13px; font-weight:700; letter-spacing:.02em; }
 footer nav a:hover { background:rgba(255,136,0,.14); color:var(--orange); }
 
+/* ---------- Kleine Laptops (1001–1240px): Menü kompakter ---------- */
+@media (min-width:1001px) and (max-width:1240px) {
+  .nav { gap:10px; }
+  header nav { gap:2px; }
+  header nav a { padding:12px 8px; font-size:14px; }
+}
+
 /* ---------- Tablet (≤1000px) ---------- */
 @media (max-width:1000px) {
   .nav { min-height:0; gap:10px; padding:10px 14px 12px; }
@@ -193,7 +215,7 @@ footer nav a:hover { background:rgba(255,136,0,.14); color:var(--orange); }
   .profile-card { grid-template-columns:160px 1fr; }
   .portrait { width:160px; height:205px; }
   .stats { grid-template-columns:repeat(2,1fr); }
-  .expand-card-grid { grid-template-columns:repeat(2,1fr); }
+  .card-grid, .expand-card-grid { grid-template-columns:repeat(2,1fr); }
   .bunte-section-card { padding:28px; }
 }
 
@@ -228,7 +250,7 @@ footer nav a:hover { background:rgba(255,136,0,.14); color:var(--orange); }
 
   section { padding:38px 0; }
   .section-title { display:block; }
-  .stats, .expand-card-grid { grid-template-columns:1fr; }
+  .stats, .card-grid, .expand-card-grid { grid-template-columns:1fr; }
   .stat { min-height:auto; }
   .bunte-section-card { padding:22px; }
   .bunte-highlight { padding:20px; }
