@@ -144,7 +144,7 @@ details.expand-card:not([open]) .detail-toggle .close-text { display:none; }
 .calendar-toggle[hidden], .calendar-toggle .less,
 .calendar-expand-checkbox:checked ~ .calendar-toggle .more { display:none; }
 .calendar-expand-checkbox:checked ~ .calendar-toggle .less { display:inline; }
-.calendar-footer { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-top:14px; }
+.calendar-footer { margin-top:14px; text-align:right; }
 .calendar-footer small { color:var(--muted); }
 
 /* ---------- Geld & Budget ---------- */

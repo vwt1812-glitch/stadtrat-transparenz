@@ -235,7 +235,6 @@
             <div id="calendarEvents" class="calendar-list"></div>
             <label for="calendarExpand" class="btn calendar-toggle" hidden><span class="more">Alle Termine anzeigen</span><span class="less">Weniger Termine anzeigen</span></label>
             <div class="calendar-footer">
-              <a class="btn" href="webcal://cloud.rpiblog.de/remote.php/dav/public-calendars/cRR6cHi9SMf4Gtd4?export">📅 Kalender abonnieren</a>
               <small id="calendarUpdated"></small>
             </div>
           </article>
@@ -359,7 +358,7 @@
         toggleEl.hidden = events.length <= VISIBLE_EVENTS;
       } catch (error) {
         console.warn("Termine konnten nicht geladen werden:", error);
-        statusEl.textContent = "Die Termine können gerade nicht angezeigt werden. Der Kalender kann aber direkt abonniert werden.";
+        statusEl.textContent = "Die Termine können gerade nicht angezeigt werden. Bitte später noch einmal versuchen.";
       }
     }
 
