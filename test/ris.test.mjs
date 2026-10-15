@@ -94,3 +94,10 @@ test("Bereiche in index.html ersetzen", () => {
   assert.equal(out, "a<!-- render:x -->neu<!-- /render:x -->b");
   assert.throws(() => fillRegions("ohne", { x: "neu" }));
 });
+
+test("Versionsnummern an CSS/JS", async () => {
+  const { setVersion } = await import("../scripts/render.mjs");
+  assert.equal(setVersion('<link href="assets/style.css?v=alt" />', "style.css", "neu"), '<link href="assets/style.css?v=neu" />');
+  assert.equal(setVersion('} from "./render.mjs";', "render.mjs", "neu"), '} from "./render.mjs?v=neu";');
+  assert.equal(setVersion('src="assets/app.mjs"', "style.css", "neu"), 'src="assets/app.mjs"');
+});

@@ -2,7 +2,7 @@
 // ausblenden), steuert den Antragsfilter und markiert den aktuellen Menüpunkt.
 import {
   renderCalendar, renderStatTermine, renderAntraege, renderAusschuesse, renderSprechstunde
-} from "./render.mjs";
+} from "./render.mjs?v=25e58b11d8";
 
 async function loadJSON(name) {
   try {
