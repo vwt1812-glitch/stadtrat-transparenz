@@ -1,0 +1,11 @@
+{
+  "name": "stadtrat-transparenz",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "termine": "node scripts/build-termine.mjs"
+  },
+  "dependencies": {
+    "ical.js": "2.2.1"
+  }
+}
