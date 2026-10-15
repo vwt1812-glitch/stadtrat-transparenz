@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: "23 5 * * *" # täglich gegen 7:23 Uhr
   workflow_dispatch:
-  push: # TEMPORÄR zum Testen auf dem Arbeits-Branch – vor dem Merge entfernen
-    branches: [claude/project-improvements-tby109]
-    paths: [".github/workflows/antraege.yml"]
 
 permissions:
   contents: write
