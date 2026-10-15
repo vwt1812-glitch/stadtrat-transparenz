@@ -7,30 +7,41 @@ Läuft als statische Seite über GitHub Pages: https://vwt1812-glitch.github.io/
 
 | Datei | Inhalt |
 |---|---|
-| `index.html` | Startseite |
+| `index.html` | Startseite – die Bereiche zwischen `<!-- render:… -->` werden automatisch befüllt |
 | `impressum.html`, `datenschutz.html` | Rechtliches |
-| `assets/style.css` | Gestaltung der Startseite |
-| `data/termine.json` | Termine – wird automatisch erzeugt, **nicht von Hand bearbeiten** |
-| `data/antraege.json` | Anträge & Anfragen – wird von Hand gepflegt |
-| `scripts/build-termine.mjs` | Holt den Nextcloud-Kalender und schreibt `data/termine.json` |
+| `assets/style.css` | Gestaltung |
+| `assets/render.mjs` | Erzeugt das HTML für Termine, Anträge, Ausschüsse und Sprechstunde (Browser **und** Action) |
+| `assets/app.mjs` | Aktualisiert die Bereiche im Browser, Antragsfilter, Menü-Markierung |
+| `data/termine.json` | Termine – automatisch, **nicht von Hand bearbeiten** |
+| `data/antraege.json` | Anträge – teils automatisch, Texte von Hand |
+| `data/ausschuesse.json` | Ausschüsse und Kommission |
+| `scripts/` | Abruf von Kalender und Ratsinformationssystem, Vorab-Rendern |
+| `test/` | Tests mit echten Seiten aus dem Ratsinformationssystem (`npm test`) |
 
-## Termine
+## Automatische Aktualisierung
 
-Die GitHub Action „Termine aktualisieren“ holt den Kalender jede Stunde ab.
-Sofort aktualisieren: **Actions → Termine aktualisieren → Run workflow**.
+| Action | Wann | Was |
+|---|---|---|
+| **Termine aktualisieren** | stündlich | holt den Nextcloud-Kalender, schreibt `data/termine.json` und aktualisiert `index.html` |
+| **Anträge aktualisieren** | täglich gegen 7:23 Uhr | gleicht mit dem Ratsinformationssystem ab, ergänzt neue Anträge und Beschlüsse |
+| **Tests** | bei Pull Requests | prüft Parser und Rendern |
+
+Sofort starten: **Actions → gewünschte Action → Run workflow**.
 
 Termine, die in Nextcloud als „Privat“ oder „Vertraulich“ markiert sind, erscheinen nur als „Interner Termin“ ohne Ort.
+Ein Termin mit „Sprechstunde“ im Titel erscheint automatisch als nächste Bürgersprechstunde.
 
-## Anträge eintragen
+## Anträge
 
-In `data/antraege.json` einen Eintrag oben in die Liste `antraege` einfügen (neueste zuerst):
+Die Action findet neue Anträge, an denen PIRATEN & Humanisten beteiligt sind, und trägt sie mit Status `offen`
+und dem Hinweis „Zusammenfassung folgt“ ein. Danach in `data/antraege.json` von Hand ergänzen:
 
 ```json
 {
   "nummer": "AN/123/2027",
-  "titel": "Kurzer Titel des Antrags",
+  "titel": "Kurzer, verständlicher Titel",
   "art": "Antrag",
-  "datum": "März 2027",
+  "datum": "01.03.2027",
   "gremium": "Stadtrat",
   "mit": "politbande, Tierschutzpartei und Linke Liste",
   "status": "offen",
@@ -42,13 +53,22 @@ In `data/antraege.json` einen Eintrag oben in die Liste `antraege` einfügen (ne
 }
 ```
 
-- `art`: z. B. `Antrag`, `Anfrage`, `Berichtsantrag`
 - `status`: `offen`, `angenommen`, `teilweise`, `abgelehnt`, `nicht_uebernommen`, `bericht`, `gescheitert`, `zurueckgezogen` oder `beantwortet`
 - `mit`: Mitantragsteller bei gemeinsamen Anträgen (optional)
-- Nummer, Antrag und Beschluss findest du im [Ratsinformationssystem](https://online-service2.nuernberg.de/buergerinfo/ag0040.asp).
-- Leere Felder werden einfach nicht angezeigt.
+- `beratungen` und `kagnr` trägt die Action ein. Beratungen werden angezeigt, solange `ergebnis` leer ist.
+- Das Feld `neu` kann nach dem Ergänzen gelöscht werden.
+- Von Hand gepflegte Felder überschreibt die Action nie.
 
 ## Arbeitsbudget
 
 Der Stand steht direkt in `index.html` (Abschnitt `#transparenz` und die Kachel „Arbeitsbudget ausgegeben“).
 Später soll er automatisch aus Actual Budget kommen.
+
+## Lokal entwickeln
+
+```bash
+npm ci
+npm test            # Tests
+npm run render      # index.html aus den Daten neu befüllen
+python3 -m http.server   # Vorschau unter http://localhost:8000
+```

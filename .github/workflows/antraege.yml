@@ -1,0 +1,48 @@
+name: Anträge aktualisieren
+
+on:
+  schedule:
+    - cron: "23 5 * * *" # täglich gegen 7:23 Uhr
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daten
+  cancel-in-progress: false
+
+jobs:
+  antraege:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Parser testen
+        run: npm test
+
+      - name: Ratsinformationssystem abgleichen
+        run: npm run antraege
+
+      - name: Inhalte in index.html schreiben
+        run: npm run render
+
+      - name: Änderungen committen
+        run: |
+          git add data/antraege.json index.html
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Anträge aktualisieren"
+          git pull --rebase
+          git push

@@ -16,7 +16,8 @@
           "label": "Antrag im Ratsinformationssystem",
           "url": "https://online-service2.nuernberg.de/buergerinfo/ag0050.asp?__kagnr=2368"
         }
-      ]
+      ],
+      "kagnr": "2368"
     },
     {
       "nummer": "AN/134/2026",
@@ -35,6 +36,17 @@
         },
         {
           "label": "Beschluss vom 22.07.2026",
+          "url": "https://online-service2.nuernberg.de/buergerinfo/to0050.asp?__ktonr=106943"
+        }
+      ],
+      "kagnr": "2304",
+      "beratungen": [
+        {
+          "datum": "22.07.2026",
+          "gremium": "Stadtrat",
+          "top": "13",
+          "beschluss": "Mehrheitlich beschlossen",
+          "abstimmung": "Ja: 52, Nein: 12, Anwesend: 64",
           "url": "https://online-service2.nuernberg.de/buergerinfo/to0050.asp?__ktonr=106943"
         }
       ]
@@ -58,7 +70,8 @@
           "label": "Behandlung am 17.06.2026",
           "url": "https://online-service2.nuernberg.de/buergerinfo/to0050.asp?__ktonr=106561"
         }
-      ]
+      ],
+      "kagnr": "2263"
     },
     {
       "nummer": "AN/098/2026",
@@ -82,7 +95,8 @@
           "label": "Bericht bei The Nuremberg Times",
           "url": "https://www.nbtimes.de/post/livestream-stadtrat-n%C3%BCrnberg-antrag-f%C3%BCr-mehr-transparenz"
         }
-      ]
+      ],
+      "kagnr": "2268"
     },
     {
       "nummer": "AN/097/2026",
@@ -103,7 +117,18 @@
           "label": "Bericht der Verwaltung",
           "url": "https://online-service2.nuernberg.de/buergerinfo/vo0050.asp?__kvonr=30220"
         }
+      ],
+      "kagnr": "2267",
+      "beratungen": [
+        {
+          "datum": "16.07.2026",
+          "gremium": "Jugendhilfeausschuss",
+          "top": "5"
+        }
       ]
     }
-  ]
+  ],
+  "ris": {
+    "letzte_kagnr": 2389
+  }
 }

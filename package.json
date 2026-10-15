@@ -3,7 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "termine": "node scripts/build-termine.mjs"
+    "termine": "node scripts/build-termine.mjs",
+    "antraege": "node scripts/build-antraege.mjs",
+    "render": "node scripts/render.mjs",
+    "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
     "ical.js": "2.2.1"

@@ -1,0 +1,47 @@
+{
+  "hinweis": "Gremien, in denen Lukas Küffner ordentliches Mitglied ist. 'muster' ist ein regulärer Ausdruck, mit dem die nächste Sitzung im Kalender gefunden wird.",
+  "ausschuesse": [
+    {
+      "name": "Personal und Organisation",
+      "art": "Ausschuss",
+      "beschreibung": "Personal- und Versorgungsangelegenheiten, allgemeine Verwaltungs- und Organisationsfragen, Datenschutz und Digitalisierung der Stadtverwaltung.",
+      "muster": "^Sitzung des Personal- und Organisationsausschusses",
+      "ris": "https://online-service2.nuernberg.de/buergerinfo/kp0040.asp?__kgrnr=4"
+    },
+    {
+      "name": "Bau- und Vergabeausschuss",
+      "art": "Ausschuss",
+      "beschreibung": "Bauverwaltung und Vergaben von Leistungen für die gesamte Stadtverwaltung, soweit nicht andere Ausschüsse zuständig sind.",
+      "muster": "^Sitzung des Bau- und Vergabeausschusses",
+      "ris": "https://online-service2.nuernberg.de/buergerinfo/kp0040.asp?__kgrnr=11"
+    },
+    {
+      "name": "Bildungsausschuss",
+      "art": "Ausschuss",
+      "beschreibung": "Ehemals Schulausschuss. Alle Angelegenheiten des Schulbereichs: Gebäude, Ausstattung, Schulentwicklung und Bildung vor Ort.",
+      "muster": "^(gemeinsame )?Sitzung des (Schul|Bildungs)ausschusses",
+      "ris": "https://online-service2.nuernberg.de/buergerinfo/kp0040.asp?__kgrnr=6"
+    },
+    {
+      "name": "SUN",
+      "art": "Werkausschuss",
+      "beschreibung": "Stadtentwässerung und Umweltanalytik Nürnberg – Infrastruktur, Gebühren, Investitionen und Betrieb.",
+      "muster": "^Sitzung des Werkausschusses Stadtentwässerung",
+      "ris": "https://online-service2.nuernberg.de/buergerinfo/kp0040.asp?__kgrnr=15"
+    },
+    {
+      "name": "FSN",
+      "art": "Werkausschuss",
+      "beschreibung": "Frankenstadion Nürnberg – Betrieb, Investitionen, Vergaben und strategische Fragen rund um das Stadion.",
+      "muster": "^Sitzung des Werkausschusses Frankenstadion",
+      "ris": "https://online-service2.nuernberg.de/buergerinfo/kp0040.asp?__kgrnr=18"
+    },
+    {
+      "name": "Sportkommission",
+      "art": "Kommission",
+      "beschreibung": "Sportpolitik, Vereine, Sportflächen und Ehrenamt. Kommissionen beraten und bereiten politische Entscheidungen vor.",
+      "muster": "^Sitzung der Sportkommission",
+      "ris": "https://online-service2.nuernberg.de/buergerinfo/kp0040.asp?__kgrnr=22"
+    }
+  ]
+}
