@@ -16,9 +16,9 @@
       "ris": "https://online-service2.nuernberg.de/buergerinfo/kp0040.asp?__kgrnr=11"
     },
     {
-      "name": "Schulausschuss",
+      "name": "Bildungsausschuss",
       "art": "Ausschuss",
-      "beschreibung": "Alle Angelegenheiten des Schulbereichs: Gebäude, Ausstattung, Schulentwicklung und Bildung vor Ort.",
+      "beschreibung": "Ehemals Schulausschuss. Alle Angelegenheiten des Schulbereichs: Gebäude, Ausstattung, Schulentwicklung und Bildung vor Ort.",
       "muster": "^(gemeinsame )?Sitzung des (Schul|Bildungs)ausschusses",
       "ris": "https://online-service2.nuernberg.de/buergerinfo/kp0040.asp?__kgrnr=6"
     },
