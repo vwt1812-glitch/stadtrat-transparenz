@@ -162,16 +162,6 @@ details.expand-card:not([open]) .detail-toggle .close-text { display:none; }
 .row b { display:block; }
 .row span { color:#bdbdbd; font-size:14px; }
 
-.accordion-item { border:1px solid var(--line); border-radius:20px; background:rgba(255,255,255,.045); overflow:hidden; }
-.accordion-item summary { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 20px; list-style:none; cursor:pointer; }
-.accordion-item summary::-webkit-details-marker { display:none; }
-.accordion-item summary::after { content:"+"; color:var(--orange); font-size:24px; font-weight:900; line-height:1; }
-.accordion-item[open] summary::after { content:"–"; }
-.accordion-title { display:grid; gap:5px; }
-.accordion-title strong { font-size:20px; color:var(--text); }
-.accordion-title span { color:#ffbf75; font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.05em; }
-.accordion-content { padding:0 20px 20px; color:#cfcfcf; line-height:1.6; }
-
 /* ---------- Mitmachen (CTA) ---------- */
 .cta { display:grid; grid-template-columns:1fr auto; gap:24px; align-items:center; padding:36px; border-radius:34px; background:linear-gradient(135deg,var(--orange),#ffb000); color:#111; box-shadow:0 24px 80px rgba(255,136,0,.20); }
 .cta h2 { margin:0; max-width:920px; font-size:clamp(31px,4vw,54px); line-height:1; letter-spacing:-.05em; }
