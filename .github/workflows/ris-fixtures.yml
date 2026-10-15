@@ -1,0 +1,30 @@
+name: RIS-Testdaten (temporär)
+on:
+  push:
+    branches: [claude/project-improvements-tby109]
+    paths: [".github/workflows/ris-fixtures.yml"]
+permissions:
+  contents: write
+jobs:
+  fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Seiten laden
+        run: |
+          B="https://online-service2.nuernberg.de/buergerinfo"
+          D=test/fixtures/ris; mkdir -p $D
+          get() { curl -sS -L --compressed -A "Mozilla/5.0 (X11; Linux x86_64) Chrome/130.0 Safari/537.36" -H "Accept-Language: de-DE,de" --max-time 90 -o "$D/$1" "$B/$2"; }
+          for n in 2368 2304 2263 2268 2267 2356 2100; do get "ag0050_$n.html" "ag0050.asp?__kagnr=$n"; done
+          for n in 30260 30281 30220; do get "vo0053_$n.html" "vo0053.asp?__kvonr=$n"; done
+          for n in 106943 107019 106561; do get "to0050_$n.html" "to0050.asp?__ktonr=$n"; done
+          get gr0040_33.html "gr0040.asp?__kgrtxnr=33"
+          get gr0040_34.html "gr0040.asp?__kgrtxnr=34"
+          ls -la $D
+      - name: Committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add test/fixtures/ris
+          git commit -m "Testdaten aus dem Ratsinformationssystem"
+          git push
