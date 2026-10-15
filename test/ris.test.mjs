@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { parseAntrag, parseBeratungen, parseBeschluss, mitAntragsteller, istUnserAntrag, decodeEntities } from "../scripts/ris.mjs";
-import { renderAntraege, renderAusschuesse, groupOf } from "../assets/render.mjs";
+import { renderAntraege, renderAusschuesse, renderUeberblick, renderBudget, groupOf } from "../assets/render.mjs";
 import { fillRegions } from "../scripts/render.mjs";
 
 const fixture = (name) => fs.readFileSync(path.join(import.meta.dirname, "fixtures/ris", name), "utf8");
@@ -86,7 +86,26 @@ test("Ausschuss findet nächste Sitzung, aber keine Besichtigung", () => {
     { title: "Sitzung des Werkausschusses Stadtentwässerung und Umweltanalytik Nürnberg SUN", start: "2099-02-01T10:00:00.000Z", end: "2099-02-01T11:00:00.000Z" }
   ] };
   const html = renderAusschuesse([{ name: "SUN", art: "Werkausschuss", beschreibung: "", muster: "^Sitzung des Werkausschusses Stadtentwässerung" }], termine, Date.parse("2098-01-01"));
-  assert.match(html, /Nächste Sitzung:<\/b> [^<]*1\. Feb/);
+  assert.match(html, /Nächste Sitzung<\/span>[^<]*01\. Feb/);
+  assert.doesNotMatch(html, /Jan/);
+});
+
+test("Auf einen Blick und Budget", () => {
+  const now = Date.parse("2098-01-01");
+  const termine = { events: [{ title: "Sitzung der Sportkommission", start: "2098-01-10T10:00:00.000Z", end: "2098-01-10T11:00:00.000Z" }] };
+  const antraege = { antraege: [{ titel: "Neuer Antrag", status: "offen" }, { titel: "Alt", status: "abgelehnt" }] };
+  const gremien = { ausschuesse: [{ name: "Sportkommission", art: "Kommission", muster: "Sportkommission" }, { name: "Bau", art: "Ausschuss" }] };
+  const budget = { stand: "Januar 2098", anspruch_monat: 1050, seit: "Mai 2026", ausgezahlt: 0, ausgegeben: 1234.5 };
+  const html = renderUeberblick({ termine, antraege, gremien, budget }, now);
+  assert.match(html, /<strong>1<\/strong><span class="glance-label">Termine in den nächsten 30 Tagen/);
+  assert.match(html, /<strong>2<\/strong><span class="glance-label">Anträge seit Mai 2026/);
+  assert.match(html, /Neuester: Neuer Antrag – Offen/);
+  assert.match(html, /<strong>1 \+ 1<\/strong>/);
+  assert.match(html, /Nächste Sitzung: Sportkommission/);
+  assert.match(html, /1\.050 €/);
+  const karte = renderBudget(budget);
+  assert.match(karte, /Bisher ausgegeben: 1\.234,5 €/);
+  assert.match(karte, /bisher keine Auszahlung/);
 });
 
 test("Bereiche in index.html ersetzen", () => {

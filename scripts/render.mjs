@@ -9,7 +9,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { createHash } from "node:crypto";
 import {
-  renderCalendar, renderStatTermine, renderAntraege, renderAusschuesse, renderSprechstunde
+  renderCalendar, renderAntraege, renderAusschuesse, renderSprechstunde, renderUeberblick, renderBudget
 } from "../assets/render.mjs";
 
 const ROOT = path.join(import.meta.dirname, "..");
@@ -64,13 +64,14 @@ async function versionAssets() {
 
 async function main() {
   const assetsChanged = await versionAssets();
-  const [termine, antraege, gremien] = await Promise.all([
-    readJSON("termine.json"), readJSON("antraege.json"), readJSON("ausschuesse.json")
+  const [termine, antraege, gremien, budget] = await Promise.all([
+    readJSON("termine.json"), readJSON("antraege.json"), readJSON("ausschuesse.json"), readJSON("budget.json")
   ]);
   const now = Date.now();
   const before = await fs.readFile(INDEX, "utf8");
   const after = fillRegions(before, {
-    statTermine: renderStatTermine(termine, now),
+    ueberblick: renderUeberblick({ termine, antraege, gremien, budget }, now),
+    budget: renderBudget(budget),
     calendar: renderCalendar(termine, now),
     antraege: renderAntraege(antraege),
     ausschuesse: renderAusschuesse(gremien?.ausschuesse, termine, now),

@@ -1,8 +1,8 @@
 // Aktualisiert die vorgerenderten Bereiche mit den neuesten Daten (z. B. vergangene Termine
 // ausblenden), steuert den Antragsfilter und markiert den aktuellen Menüpunkt.
 import {
-  renderCalendar, renderStatTermine, renderAntraege, renderAusschuesse, renderSprechstunde
-} from "./render.mjs?v=25e58b11d8";
+  renderCalendar, renderAntraege, renderAusschuesse, renderSprechstunde, renderUeberblick, renderBudget
+} from "./render.mjs?v=4658b31515";
 
 async function loadJSON(name) {
   try {
@@ -36,12 +36,13 @@ function initAntragFilter() {
 }
 
 async function refresh() {
-  const [termine, antraege, gremien] = await Promise.all([
-    loadJSON("termine.json"), loadJSON("antraege.json"), loadJSON("ausschuesse.json")
+  const [termine, antraege, gremien, budget] = await Promise.all([
+    loadJSON("termine.json"), loadJSON("antraege.json"), loadJSON("ausschuesse.json"), loadJSON("budget.json")
   ]);
   const now = Date.now();
+  if (termine && antraege && gremien && budget) setRegion("ueberblick", renderUeberblick({ termine, antraege, gremien, budget }, now));
+  if (budget) setRegion("budget", renderBudget(budget));
   if (termine) {
-    setRegion("statTermine", renderStatTermine(termine, now));
     setRegion("calendar", renderCalendar(termine, now));
     setRegion("sprechstunde", renderSprechstunde(termine, now));
     if (gremien) setRegion("ausschuesse", renderAusschuesse(gremien.ausschuesse, termine, now));
@@ -56,12 +57,20 @@ function initNavigation() {
   const links = [...document.querySelectorAll("header nav a[href^='#']")];
   const sections = links.map((a) => document.getElementById(a.hash.slice(1))).filter(Boolean);
 
+  const nav = document.querySelector("header nav");
+  let activeId = null;
   function setActive(id) {
+    if (id === activeId) return;
+    activeId = id;
     links.forEach((a) => {
       const active = a.hash === "#" + id;
       a.classList.toggle("active", active);
       if (active) a.setAttribute("aria-current", "true");
       else a.removeAttribute("aria-current");
+      // Auf schmalen Bildschirmen ist das Menü wischbar: aktiven Punkt sichtbar halten
+      if (active && nav.scrollWidth > nav.clientWidth) {
+        nav.scrollTo({ left: a.offsetLeft - (nav.clientWidth - a.offsetWidth) / 2, behavior: "smooth" });
+      }
     });
   }
 
