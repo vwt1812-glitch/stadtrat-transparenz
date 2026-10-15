@@ -116,6 +116,7 @@ details.expand-card:not([open]) .detail-toggle .close-text { display:none; }
 .bunte-card { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(360px,.75fr); gap:28px; align-items:center; }
 .bunte-highlight { padding:24px; background:linear-gradient(135deg,rgba(255,136,0,.14),rgba(255,255,255,.035)); border:1px solid rgba(255,136,0,.24); border-radius:24px; }
 .bunte-highlight p { margin-bottom:0; }
+.text-link { color:#ffbf75; text-decoration:underline; text-underline-offset:3px; }
 
 /* ---------- Termine ---------- */
 .termine-section .section-title p { max-width:820px; }
