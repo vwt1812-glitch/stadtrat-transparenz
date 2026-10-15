@@ -1,0 +1,48 @@
+name: Termine aktualisieren
+
+on:
+  schedule:
+    - cron: "17 * * * *" # stündlich
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build-termine.mjs"
+      - ".github/workflows/termine.yml"
+      - "package.json"
+      - "package-lock.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: termine
+  cancel-in-progress: false
+
+jobs:
+  termine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Kalender abrufen
+        run: npm run termine
+
+      - name: Änderungen committen
+        run: |
+          git add data/termine.json
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Termine aktualisieren"
+          git push
