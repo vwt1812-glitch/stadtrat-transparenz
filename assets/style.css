@@ -165,8 +165,6 @@ section { position:relative; padding:56px 0; }
 
 /* ---------- Termine ---------- */
 .termine-section .section-title p { max-width:820px; }
-.context-note { margin:14px 0 16px; padding:16px 18px; border-radius:20px; border:1px solid rgba(255,136,0,.24); background:rgba(255,136,0,.075); color:#ffd3a0; line-height:1.55; }
-.context-note strong { color:#fff; }
 .notice { margin-top:14px; padding:14px; border-radius:18px; border:1px solid rgba(255,136,0,.24); background:rgba(255,136,0,.08); color:#ffd3a0; line-height:1.45; }
 .notice[hidden] { display:none; }
 
@@ -178,7 +176,7 @@ section { position:relative; padding:56px 0; }
 .event-meta { color:#bdbdbd; margin-top:5px; font-size:14px; }
 #calendarEvents .event:first-child { border-color:rgba(255,136,0,.55); background:linear-gradient(135deg,rgba(255,136,0,.18),rgba(255,255,255,.045)); box-shadow:0 16px 50px rgba(255,136,0,.12); }
 #calendarEvents .event:first-child .event-title::before {
-  content:"Nächster Termin"; display:inline-flex; vertical-align:middle; margin:0 8px 6px 0; padding:4px 8px;
+  content:"Nächster Termin"; display:flex; width:max-content; margin:0 0 6px; padding:4px 8px;
   border-radius:999px; background:rgba(255,136,0,.18); color:#ffbf75;
   font-size:11px; font-weight:1000; text-transform:uppercase; letter-spacing:.05em;
 }
@@ -198,7 +196,7 @@ section { position:relative; padding:56px 0; }
 .budget-total { min-height:100%; background:linear-gradient(135deg,rgba(255,136,0,.22),rgba(255,106,0,.08)); border-color:rgba(255,136,0,.3); }
 .money-card { padding:clamp(24px,3vw,34px); }
 .money-card .money-title { margin:0; font-size:clamp(32px,3.4vw,52px); line-height:1.04; letter-spacing:-.045em; }
-.money-card .money-emphasis { display:block; margin-top:8px; font-size:clamp(38px,4.4vw,64px); line-height:.98; font-weight:1000; letter-spacing:-.055em; }
+.money-card .money-emphasis { display:block; margin-top:8px; color:#ffbf75; font-size:clamp(17px,1.6vw,21px); line-height:1.2; font-weight:900; text-transform:uppercase; letter-spacing:.05em; }
 .money-card p { max-width:780px; }
 .budget-details { margin-top:16px; }
 
@@ -211,7 +209,7 @@ section { position:relative; padding:56px 0; }
 /* ---------- Mitmachen (CTA) ---------- */
 .cta { display:grid; grid-template-columns:1fr auto; gap:24px; align-items:center; padding:36px; border-radius:34px; background:linear-gradient(135deg,var(--orange),#ffb000); color:#111; box-shadow:0 24px 80px rgba(255,136,0,.20); }
 .cta h2 { margin:0; max-width:920px; font-size:clamp(31px,4vw,54px); line-height:1; letter-spacing:-.05em; }
-.cta p { margin:14px 0 0; max-width:820px; color:rgba(0,0,0,.78); font-size:18px; line-height:1.55; font-weight:650; }
+.cta p { margin:14px 0 0; max-width:820px; color:rgba(0,0,0,.82); font-size:18px; line-height:1.55; font-weight:500; }
 .cta .btn { background:#111; color:#fff; border-color:#111; }
 .cta .btn.btn-light { background:rgba(255,255,255,.55); color:#111; border-color:rgba(0,0,0,.15); }
 .cta-actions { display:flex; flex-direction:column; gap:10px; }
@@ -299,6 +297,11 @@ footer nav a:hover { background:rgba(255,136,0,.14); color:var(--orange); }
   section { padding:38px 0; }
   .section-title { display:block; }
   .card-grid, .glance-grid { grid-template-columns:1fr; }
+  .card-grid { gap:10px; }
+  .topic-card { padding:16px 18px; border-radius:18px; }
+  .topic-card .tag { margin-bottom:8px; padding:5px 9px; font-size:11px; }
+  .topic-card h3 { font-size:18px; }
+  .topic-card p { margin-top:6px; font-size:15px; line-height:1.5; }
   .glance { padding:14px 16px; align-items:center; }
   .glance-text strong { font-size:22px; }
   .row-item summary { grid-template-columns:minmax(0,1fr) 20px; gap:6px 12px; padding:14px 16px; }
@@ -307,8 +310,8 @@ footer nav a:hover { background:rgba(255,136,0,.14); color:var(--orange); }
   .row-title { font-size:17px; }
   .row-body { padding:0 16px 16px; }
   .bunte-section-card { padding:22px; }
-  .money-card .money-title { font-size:31px; }
-  .money-card .money-emphasis { font-size:42px; }
+  .money-card .money-title { font-size:34px; }
+  .money-card .money-emphasis { font-size:16px; }
   .cta { padding:26px; }
 }
 
