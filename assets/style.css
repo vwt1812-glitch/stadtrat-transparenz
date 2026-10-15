@@ -128,8 +128,10 @@ details.expand-card:not([open]) .detail-toggle .close-text { display:none; }
 .status-offen { color:#ffd3a0; background:rgba(255,136,0,.12); border-color:rgba(255,136,0,.3); }
 .status-angenommen, .status-beantwortet { color:#b9f29a; background:rgba(107,211,66,.12); border-color:rgba(107,211,66,.35); }
 .status-teilweise { color:#9fd4ff; background:rgba(58,165,255,.12); border-color:rgba(58,165,255,.35); }
-.status-abgelehnt, .status-gescheitert, .status-zurueckgezogen { color:#ffb4a8; background:rgba(255,90,70,.12); border-color:rgba(255,90,70,.35); }
+.status-bericht { color:#e2d4ff; background:rgba(168,85,247,.12); border-color:rgba(168,85,247,.35); }
+.status-abgelehnt, .status-gescheitert, .status-nicht_uebernommen, .status-zurueckgezogen { color:#ffb4a8; background:rgba(255,90,70,.12); border-color:rgba(255,90,70,.35); }
 .antrag-meta { color:var(--muted); font-size:14px; font-weight:700; }
+.antrag .antrag-mit { margin-top:6px; color:#ffbf75; font-size:14px; font-weight:700; }
 .antrag .antrag-ergebnis { color:#e8e8e8; }
 .antrag-links { display:flex; flex-wrap:wrap; gap:16px; margin-top:14px; font-weight:700; }
 

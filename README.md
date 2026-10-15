@@ -27,10 +27,12 @@ In `data/antraege.json` einen Eintrag oben in die Liste `antraege` einfügen (ne
 
 ```json
 {
+  "nummer": "AN/123/2027",
   "titel": "Kurzer Titel des Antrags",
   "art": "Antrag",
   "datum": "März 2027",
   "gremium": "Stadtrat",
+  "mit": "politbande, Tierschutzpartei und Linke Liste",
   "status": "offen",
   "zusammenfassung": "Worum es geht, in ein bis zwei Sätzen.",
   "ergebnis": "",
@@ -41,7 +43,9 @@ In `data/antraege.json` einen Eintrag oben in die Liste `antraege` einfügen (ne
 ```
 
 - `art`: z. B. `Antrag`, `Anfrage`, `Berichtsantrag`
-- `status`: `offen`, `angenommen`, `teilweise`, `abgelehnt`, `gescheitert`, `zurueckgezogen` oder `beantwortet`
+- `status`: `offen`, `angenommen`, `teilweise`, `abgelehnt`, `nicht_uebernommen`, `bericht`, `gescheitert`, `zurueckgezogen` oder `beantwortet`
+- `mit`: Mitantragsteller bei gemeinsamen Anträgen (optional)
+- Nummer, Antrag und Beschluss findest du im [Ratsinformationssystem](https://online-service2.nuernberg.de/buergerinfo/ag0040.asp).
 - Leere Felder werden einfach nicht angezeigt.
 
 ## Arbeitsbudget
