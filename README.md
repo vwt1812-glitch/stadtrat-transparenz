@@ -23,7 +23,7 @@ Läuft als statische Seite über GitHub Pages: https://vwt1812-glitch.github.io/
 
 | Action | Wann | Was |
 |---|---|---|
-| **Termine aktualisieren** | stündlich | holt den Nextcloud-Kalender, schreibt `data/termine.json` und aktualisiert `index.html` |
+| **Termine aktualisieren** | alle 15 Minuten (GitHub startet geplante Läufe teils mit Verspätung) | holt den Nextcloud-Kalender, schreibt `data/termine.json` und aktualisiert `index.html` |
 | **Anträge aktualisieren** | täglich gegen 7:23 Uhr | gleicht mit dem Ratsinformationssystem ab, ergänzt neue Anträge und Beschlüsse |
 | **Tests** | bei Pull Requests | prüft Parser und Rendern |
 
