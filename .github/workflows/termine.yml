@@ -2,7 +2,9 @@ name: Termine aktualisieren
 
 on:
   schedule:
-    - cron: "17 * * * *" # stündlich
+    # GitHub startet geplante Läufe oft verspätet oder lässt welche aus –
+    # daher alle 15 Minuten versuchen. Läufe ohne Änderung erzeugen keinen Commit.
+    - cron: "2,17,32,47 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
