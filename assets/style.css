@@ -56,7 +56,12 @@ header nav a {
   padding:14px 18px; border-radius:18px; border:1px solid transparent; background:transparent;
   color:#f2f2f2; font-size:15px; font-weight:950; letter-spacing:.02em;
 }
-header nav a:hover, header nav a.active { color:#ffbf75; background:rgba(255,136,0,.18); border-color:rgba(255,136,0,.34); }
+header nav a.active { color:#ffbf75; background:rgba(255,136,0,.18); border-color:rgba(255,136,0,.34); }
+/* Hover nur mit Maus und dezent, damit er nicht wie der aktuelle Abschnitt aussieht
+   (auf Touchgeräten bliebe er sonst nach dem Antippen hängen) */
+@media (hover:hover) {
+  header nav a:not(.active):hover { background:rgba(255,255,255,.07); }
+}
 header nav a:focus-visible { outline:2px solid rgba(255,255,255,.9); outline-offset:3px; }
 
 /* ---------- Hero ---------- */
