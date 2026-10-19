@@ -1,13 +1,6 @@
 {
-  "updated": "2026-10-19T14:25:34.614Z",
+  "updated": "2026-10-19T20:06:02.942Z",
   "events": [
-    {
-      "title": "Treffen AG",
-      "location": "Rathausbüro",
-      "start": "2026-10-19T13:00:00.000Z",
-      "end": "2026-10-19T16:00:00.000Z",
-      "allDay": false
-    },
     {
       "title": "Sitzung des Personal- und Organisationsausschusses",
       "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
@@ -90,6 +83,20 @@
       "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
       "start": "2026-10-30T08:00:00.000Z",
       "end": "2026-10-30T11:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Haushaltstreffen mit Marion",
+      "location": "",
+      "start": "2026-10-30T12:00:00.000Z",
+      "end": "2026-10-30T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Treffen mit Nathalie wegen Ausschuss",
+      "location": "",
+      "start": "2026-11-02T08:00:00.000Z",
+      "end": "2026-11-02T10:00:00.000Z",
       "allDay": false
     },
     {
