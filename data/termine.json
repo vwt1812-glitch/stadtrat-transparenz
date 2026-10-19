@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T22:41:17.372Z",
+  "updated": "2026-10-19T14:25:34.614Z",
   "events": [
     {
       "title": "Treffen AG",
@@ -97,6 +97,13 @@
       "location": "",
       "start": "2026-11-06T19:00:00.000Z",
       "end": "2026-11-06T22:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Vollversammlung AG",
+      "location": "",
+      "start": "2026-11-09T15:00:00.000Z",
+      "end": "2026-11-09T17:00:00.000Z",
       "allDay": false
     },
     {
