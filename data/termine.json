@@ -1,13 +1,6 @@
 {
-  "updated": "2026-10-29T09:31:30.784Z",
+  "updated": "2026-10-29T16:23:15.652Z",
   "events": [
-    {
-      "title": "Sitzung des Bau- und Vergabeausschusses\n- direkt im Anschluss an den Werkausschuss (SUN) - (ö/nö)",
-      "location": "",
-      "start": "2026-10-29T09:30:00.000Z",
-      "end": "2026-10-29T11:00:00.000Z",
-      "allDay": false
-    },
     {
       "title": "Sitzung des Schulausschusses",
       "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
@@ -19,7 +12,7 @@
       "title": "Haushaltstreffen mit Marion",
       "location": "",
       "start": "2026-10-30T12:00:00.000Z",
-      "end": "2026-10-30T14:00:00.000Z",
+      "end": "2026-10-30T17:00:00.000Z",
       "allDay": false
     },
     {
@@ -40,7 +33,7 @@
       "title": "Treffen mit Nathalie wegen Ausschuss",
       "location": "",
       "start": "2026-11-02T08:00:00.000Z",
-      "end": "2026-11-02T10:00:00.000Z",
+      "end": "2026-11-02T14:00:00.000Z",
       "allDay": false
     },
     {
@@ -198,10 +191,318 @@
       "allDay": false
     },
     {
+      "title": "Schulbesuch im Rathaus",
+      "location": "großer Sitzungssaal",
+      "start": "2027-01-14T08:00:00.000Z",
+      "end": "2027-01-14T10:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Personal- und Organisationsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-01-26T14:00:00.000Z",
+      "end": "2027-01-26T15:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Stadtrates",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-02-03T14:00:00.000Z",
+      "end": "2027-02-03T17:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Werkausschusses Stadtentwässerung und Umweltanalytik Nürnberg (SUN)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-02-04T08:00:00.000Z",
+      "end": "2027-02-04T08:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bau- und Vergabeausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-02-04T08:30:00.000Z",
+      "end": "2027-02-04T09:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bildungsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-02-19T08:00:00.000Z",
+      "end": "2027-02-19T10:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Personal- und Organisationsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-02-23T14:00:00.000Z",
+      "end": "2027-02-23T15:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Stadtrates",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-03-03T14:00:00.000Z",
+      "end": "2027-03-03T17:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Werkausschusses Stadtentwässerung und Umweltanalytik Nürnberg (SUN)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-03-04T08:00:00.000Z",
+      "end": "2027-03-04T08:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bau- und Vergabeausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-03-04T08:30:00.000Z",
+      "end": "2027-03-04T09:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung der Sportkommission",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-03-05T13:00:00.000Z",
+      "end": "2027-03-05T13:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Werkausschusses Frankenstadion Nürnberg (FSN)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-03-12T13:00:00.000Z",
+      "end": "2027-03-12T15:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Personal- und Organisationsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-04-06T13:00:00.000Z",
+      "end": "2027-04-06T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Stadtrates",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-04-07T13:00:00.000Z",
+      "end": "2027-04-07T16:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Werkausschusses Stadtentwässerung und Umweltanalytik Nürnberg (SUN)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-04-08T07:00:00.000Z",
+      "end": "2027-04-08T07:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bau- und Vergabeausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-04-08T07:30:00.000Z",
+      "end": "2027-04-08T08:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bildungsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-04-23T07:00:00.000Z",
+      "end": "2027-04-23T09:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Personal- und Organisationsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-05-04T13:00:00.000Z",
+      "end": "2027-05-04T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Stadtrates",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-05-12T13:00:00.000Z",
+      "end": "2027-05-12T16:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Werkausschusses Stadtentwässerung und Umweltanalytik Nürnberg (SUN)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-05-13T07:00:00.000Z",
+      "end": "2027-05-13T07:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bau- und Vergabeausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-05-13T07:30:00.000Z",
+      "end": "2027-05-13T08:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Personal- und Organisationsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-06-08T13:00:00.000Z",
+      "end": "2027-06-08T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Werkausschusses Stadtentwässerung und Umweltanalytik Nürnberg (SUN)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-06-10T07:00:00.000Z",
+      "end": "2027-06-10T07:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bau- und Vergabeausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-06-10T07:30:00.000Z",
+      "end": "2027-06-10T08:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "gemeinsame Sitzung des Jugendhilfeausschusses und des Bildungsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-06-10T12:00:00.000Z",
+      "end": "2027-06-10T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Stadtrates",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-06-16T13:00:00.000Z",
+      "end": "2027-06-16T15:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung der Sportkommission",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-06-25T12:00:00.000Z",
+      "end": "2027-06-25T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Werkausschusses Frankenstadion Nürnberg (FSN)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-07-02T11:00:00.000Z",
+      "end": "2027-07-02T13:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Werkausschusses Stadtentwässerung und Umweltanalytik Nürnberg (SUN)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-07-08T07:00:00.000Z",
+      "end": "2027-07-08T07:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bau- und Vergabeausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-07-08T07:30:00.000Z",
+      "end": "2027-07-08T08:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Stadtrates (festliche Sondersitzung)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-07-16T15:00:00.000Z",
+      "end": "2027-07-16T18:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Personal- und Organisationsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-07-20T13:00:00.000Z",
+      "end": "2027-07-20T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Stadtrates",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-07-21T13:00:00.000Z",
+      "end": "2027-07-21T16:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bildungsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-07-23T07:00:00.000Z",
+      "end": "2027-07-23T10:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Personal- und Organisationsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-09-14T13:00:00.000Z",
+      "end": "2027-09-14T14:00:00.000Z",
+      "allDay": false
+    },
+    {
       "title": "Energy Konzert",
       "location": "",
       "start": "2027-09-16T18:00:00.000Z",
       "end": "2027-09-16T19:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Stadtrates",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-09-22T13:00:00.000Z",
+      "end": "2027-09-22T16:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Werkausschusses Stadtentwässerung und Umweltanalytik Nürnberg (SUN)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-09-23T07:00:00.000Z",
+      "end": "2027-09-23T07:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bau- und Vergabeausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-09-23T07:30:00.000Z",
+      "end": "2027-09-23T08:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Werkausschusses Frankenstadion Nürnberg (FSN)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-10-15T12:00:00.000Z",
+      "end": "2027-10-15T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Personal- und Organisationsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-10-19T13:00:00.000Z",
+      "end": "2027-10-19T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Werkausschusses Stadtentwässerung und Umweltanalytik Nürnberg (SUN)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-10-21T07:00:00.000Z",
+      "end": "2027-10-21T07:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bau- und Vergabeausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-10-21T07:30:00.000Z",
+      "end": "2027-10-21T08:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Stadtrates",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-10-27T13:00:00.000Z",
+      "end": "2027-10-27T16:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Bildungsausschusses",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-10-29T07:00:00.000Z",
+      "end": "2027-10-29T10:00:00.000Z",
       "allDay": false
     }
   ]
