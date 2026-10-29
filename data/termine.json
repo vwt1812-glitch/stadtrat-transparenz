@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T16:23:15.652Z",
+  "updated": "2026-10-29T21:20:10.808Z",
   "events": [
     {
       "title": "Sitzung des Schulausschusses",
@@ -146,6 +146,13 @@
       "location": "",
       "start": "2026-12-11T13:00:00.000Z",
       "end": "2026-12-11T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Mitgliederversammlung & Weihnachtsfeier P&H",
+      "location": "",
+      "start": "2026-12-12T15:00:00.000Z",
+      "end": "2026-12-12T23:00:00.000Z",
       "allDay": false
     },
     {
