@@ -1,11 +1,18 @@
 {
-  "updated": "2026-10-31T22:17:08.447Z",
+  "updated": "2026-11-01T22:50:23.153Z",
   "events": [
     {
       "title": "Treffen mit Nathalie wegen Ausschuss",
       "location": "",
       "start": "2026-11-02T08:00:00.000Z",
       "end": "2026-11-02T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Programmwerkstatt",
+      "location": "Bayern",
+      "start": "2026-11-02T19:00:00.000Z",
+      "end": "2026-11-02T21:00:00.000Z",
       "allDay": false
     },
     {
