@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-02T19:44:39.690Z",
+  "updated": "2026-11-03T01:50:19.652Z",
   "events": [
-    {
-      "title": "Programmwerkstatt",
-      "location": "Bayern",
-      "start": "2026-11-02T19:00:00.000Z",
-      "end": "2026-11-02T21:00:00.000Z",
-      "allDay": false
-    },
     {
       "title": "Treffen Christian Sport",
       "location": "",
       "start": "2026-11-03T11:00:00.000Z",
       "end": "2026-11-03T12:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Treffen mit Nathalie und Marion Haushalt",
+      "location": "",
+      "start": "2026-11-04T10:00:00.000Z",
+      "end": "2026-11-04T15:00:00.000Z",
       "allDay": false
     },
     {
@@ -62,6 +62,13 @@
       "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
       "start": "2026-11-13T13:00:00.000Z",
       "end": "2026-11-13T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Programmwerkstatt",
+      "location": "Bayern",
+      "start": "2026-11-16T19:00:00.000Z",
+      "end": "2026-11-16T21:00:00.000Z",
       "allDay": false
     },
     {
@@ -118,6 +125,13 @@
       "location": "",
       "start": "2026-11-28T09:00:00.000Z",
       "end": "2026-11-28T17:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Programmwerkstatt",
+      "location": "Bayern",
+      "start": "2026-11-30T19:00:00.000Z",
+      "end": "2026-11-30T21:00:00.000Z",
       "allDay": false
     },
     {
