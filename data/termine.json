@@ -1,13 +1,6 @@
 {
-  "updated": "2026-11-03T17:04:01.224Z",
+  "updated": "2026-11-04T17:49:48.629Z",
   "events": [
-    {
-      "title": "Treffen mit Nathalie und Marion Haushalt",
-      "location": "",
-      "start": "2026-11-04T10:00:00.000Z",
-      "end": "2026-11-04T15:00:00.000Z",
-      "allDay": false
-    },
     {
       "title": "Linux-Treff Nord",
       "location": "Sportgaststätte des Turnerbund St. Johannis 1888 Nürnberg, Schnepfenreuther Hauptstr. 19",
@@ -27,6 +20,13 @@
       "location": "",
       "start": "2026-11-06T19:00:00.000Z",
       "end": "2026-11-06T22:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Treffen mit Nathalie und Marion",
+      "location": "",
+      "start": "2026-11-09T13:00:00.000Z",
+      "end": "2026-11-09T15:00:00.000Z",
       "allDay": false
     },
     {
