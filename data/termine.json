@@ -1,20 +1,6 @@
 {
-  "updated": "2026-11-04T17:49:48.629Z",
+  "updated": "2026-11-06T00:02:20.620Z",
   "events": [
-    {
-      "title": "Linux-Treff Nord",
-      "location": "Sportgaststätte des Turnerbund St. Johannis 1888 Nürnberg, Schnepfenreuther Hauptstr. 19",
-      "start": "2026-11-05T18:00:00.000Z",
-      "end": "2026-11-05T20:00:00.000Z",
-      "allDay": false
-    },
-    {
-      "title": "Quer vom BR mit Interview evtl.",
-      "location": "",
-      "start": "2026-11-05T19:15:00.000Z",
-      "end": "2026-11-05T20:00:00.000Z",
-      "allDay": false
-    },
     {
       "title": "Stammtisch",
       "location": "",
@@ -69,6 +55,13 @@
       "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
       "start": "2026-11-19T08:00:00.000Z",
       "end": "2026-11-19T18:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Linux-Treff Nord",
+      "location": "Sportgaststätte des Turnerbund St. Johannis 1888 Nürnberg, Schnepfenreuther Hauptstr. 19",
+      "start": "2026-11-19T18:00:00.000Z",
+      "end": "2026-11-19T20:00:00.000Z",
       "allDay": false
     },
     {
