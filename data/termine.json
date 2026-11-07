@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T00:23:00.507Z",
+  "updated": "2026-11-07T13:25:20.690Z",
   "events": [
     {
       "title": "Treffen mit Nathalie und Marion",
@@ -20,6 +20,13 @@
       "location": "",
       "start": "2026-11-10T18:00:00.000Z",
       "end": "2026-11-10T19:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "ASN und Umweltausschuss Vertretung für Nathalie",
+      "location": "",
+      "start": "2026-11-11T14:00:00.000Z",
+      "end": "2026-11-11T15:00:00.000Z",
       "allDay": false
     },
     {
