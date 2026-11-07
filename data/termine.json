@@ -1,23 +1,16 @@
 {
-  "updated": "2026-11-06T20:42:56.135Z",
+  "updated": "2026-11-07T00:23:00.507Z",
   "events": [
     {
-      "title": "Stammtisch",
-      "location": "",
-      "start": "2026-11-06T19:00:00.000Z",
-      "end": "2026-11-06T22:00:00.000Z",
-      "allDay": false
-    },
-    {
       "title": "Treffen mit Nathalie und Marion",
-      "location": "",
+      "location": "Theresienstraße 5",
       "start": "2026-11-09T13:00:00.000Z",
       "end": "2026-11-09T15:00:00.000Z",
       "allDay": false
     },
     {
       "title": "Vollversammlung AG",
-      "location": "",
+      "location": "Theresienstraße 5",
       "start": "2026-11-09T15:00:00.000Z",
       "end": "2026-11-09T17:00:00.000Z",
       "allDay": false
@@ -30,7 +23,7 @@
       "allDay": false
     },
     {
-      "title": "Führung durchs Rathaus",
+      "title": "Führung durchs Rathaus Schulklasse",
       "location": "",
       "start": "2026-11-12T12:30:00.000Z",
       "end": "2026-11-12T14:30:00.000Z",
