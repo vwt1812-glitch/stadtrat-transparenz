@@ -1,20 +1,6 @@
 {
-  "updated": "2026-11-11T10:27:14.800Z",
+  "updated": "2026-11-11T17:59:34.291Z",
   "events": [
-    {
-      "title": "Telefonat mit Spencer",
-      "location": "",
-      "start": "2026-11-11T11:00:00.000Z",
-      "end": "2026-11-11T11:30:00.000Z",
-      "allDay": false
-    },
-    {
-      "title": "ASN und Umweltausschuss Vertretung für Nathalie",
-      "location": "",
-      "start": "2026-11-11T14:00:00.000Z",
-      "end": "2026-11-11T15:00:00.000Z",
-      "allDay": false
-    },
     {
       "title": "Führung durchs Rathaus Schulklasse",
       "location": "",
@@ -27,6 +13,20 @@
       "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
       "start": "2026-11-13T13:00:00.000Z",
       "end": "2026-11-13T14:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Markt der Unkürzbarkeiten",
+      "location": "Innenstadt",
+      "start": "2026-11-13T14:00:00.000Z",
+      "end": "2026-11-13T15:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "unkürzbar Demo",
+      "location": "Vor dem Rathaus",
+      "start": "2026-11-13T17:00:00.000Z",
+      "end": "2026-11-13T18:00:00.000Z",
       "allDay": false
     },
     {
@@ -132,13 +132,6 @@
       "location": "Kunstquartier",
       "start": "2026-12-08T16:30:00.000Z",
       "end": "2026-12-08T17:30:00.000Z",
-      "allDay": false
-    },
-    {
-      "title": "Sitzung des Werkausschusses Frankenstadion Nürnberg (FSN)\n- direkt im Anschluss an den Werkausschuss (NüBad) - (ö/nö)",
-      "location": "",
-      "start": "2026-12-11T13:00:00.000Z",
-      "end": "2026-12-11T14:00:00.000Z",
       "allDay": false
     },
     {
