@@ -1,6 +1,6 @@
 {
   "hinweis": "Anträge und Anfragen von Lukas Küffner (PIRATEN & Humanisten) im Nürnberger Stadtrat, neueste zuerst. Quelle: Ratsinformationssystem der Stadt Nürnberg. status: offen | angenommen | teilweise | abgelehnt | nicht_uebernommen | bericht | zurueckgezogen | beantwortet",
-  "stand": "2026-11-06",
+  "stand": "2026-11-12",
   "antraege": [
     {
       "nummer": "AN/198/2026",
@@ -129,6 +129,6 @@
     }
   ],
   "ris": {
-    "letzte_kagnr": 2418
+    "letzte_kagnr": 2419
   }
 }
