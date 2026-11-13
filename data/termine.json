@@ -1,27 +1,6 @@
 {
-  "updated": "2026-11-12T16:18:00.934Z",
+  "updated": "2026-11-13T18:06:01.823Z",
   "events": [
-    {
-      "title": "Sitzung der Sportkommission",
-      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
-      "start": "2026-11-13T13:00:00.000Z",
-      "end": "2026-11-13T14:00:00.000Z",
-      "allDay": false
-    },
-    {
-      "title": "Markt der Unkürzbarkeiten",
-      "location": "Innenstadt",
-      "start": "2026-11-13T14:00:00.000Z",
-      "end": "2026-11-13T15:00:00.000Z",
-      "allDay": false
-    },
-    {
-      "title": "unkürzbar Demo",
-      "location": "Vor dem Rathaus",
-      "start": "2026-11-13T17:00:00.000Z",
-      "end": "2026-11-13T18:00:00.000Z",
-      "allDay": false
-    },
     {
       "title": "Programmwerkstatt",
       "location": "Bayern",
