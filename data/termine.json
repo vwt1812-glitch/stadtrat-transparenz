@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T15:26:15.327Z",
+  "updated": "2026-11-16T00:16:46.412Z",
   "events": [
     {
       "title": "Programmwerkstatt",
@@ -97,6 +97,20 @@
       "location": "Theresienstraße 23, 90762 Fürth",
       "start": "2026-12-02T09:00:00.000Z",
       "end": "2026-12-02T10:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "KV VoSi",
+      "location": "Zirkelschmiedgasse 5 90402 Nürnberg",
+      "start": "2026-12-04T18:00:00.000Z",
+      "end": "2026-12-04T19:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Stammtisch / LAN Party?",
+      "location": "Zirkelschmiedgasse 5 90402 Nürnberg",
+      "start": "2026-12-04T19:00:00.000Z",
+      "end": "2026-12-05T16:00:00.000Z",
       "allDay": false
     },
     {
