@@ -1,20 +1,6 @@
 {
-  "updated": "2026-11-19T13:09:19.159Z",
+  "updated": "2026-11-19T21:35:49.832Z",
   "events": [
-    {
-      "title": "Sitzung des Stadtrates Etat",
-      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
-      "start": "2026-11-19T08:00:00.000Z",
-      "end": "2026-11-19T18:00:00.000Z",
-      "allDay": false
-    },
-    {
-      "title": "Linux-Treff Nord",
-      "location": "Sportgaststätte des Turnerbund St. Johannis 1888 Nürnberg, Schnepfenreuther Hauptstr. 19",
-      "start": "2026-11-19T18:00:00.000Z",
-      "end": "2026-11-19T20:00:00.000Z",
-      "allDay": false
-    },
     {
       "title": "Sitzung Stadtrat Etat",
       "location": "",
