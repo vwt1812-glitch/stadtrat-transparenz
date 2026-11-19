@@ -1,7 +1,25 @@
 {
   "hinweis": "Anträge und Anfragen von Lukas Küffner (PIRATEN & Humanisten) im Nürnberger Stadtrat, neueste zuerst. Quelle: Ratsinformationssystem der Stadt Nürnberg. status: offen | angenommen | teilweise | abgelehnt | nicht_uebernommen | bericht | zurueckgezogen | beantwortet",
-  "stand": "2026-11-18",
+  "stand": "2026-11-19",
   "antraege": [
+    {
+      "nummer": "AN/261/2026",
+      "kagnr": "2431",
+      "titel": "Zukunft des Hermann-Kesten-Kollegs und Beteiligung der Schulgemeinschaft",
+      "art": "Antrag",
+      "datum": "12.11.2026",
+      "gremium": "Stadtrat",
+      "status": "offen",
+      "zusammenfassung": "",
+      "ergebnis": "",
+      "links": [
+        {
+          "label": "Antrag im Ratsinformationssystem",
+          "url": "https://online-service2.nuernberg.de/buergerinfo/ag0050.asp?__kagnr=2431"
+        }
+      ],
+      "neu": true
+    },
     {
       "nummer": "AN/198/2026",
       "titel": "Verbindliche Kernnachtruhe am Flughafen Nürnberg",
@@ -129,6 +147,6 @@
     }
   ],
   "ris": {
-    "letzte_kagnr": 2428
+    "letzte_kagnr": 2465
   }
 }
