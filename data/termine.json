@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T16:27:55.389Z",
+  "updated": "2026-11-19T13:09:19.159Z",
   "events": [
     {
       "title": "Sitzung des Stadtrates Etat",
@@ -531,6 +531,13 @@
       "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
       "start": "2027-11-18T08:00:00.000Z",
       "end": "2027-11-18T18:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung des Stadtrates (Etat)",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-11-19T08:00:00.000Z",
+      "end": "2027-11-19T18:00:00.000Z",
       "allDay": false
     }
   ]
