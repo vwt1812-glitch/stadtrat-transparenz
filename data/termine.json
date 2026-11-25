@@ -1,13 +1,6 @@
 {
-  "updated": "2026-11-23T22:50:37.684Z",
+  "updated": "2026-11-25T02:47:38.866Z",
   "events": [
-    {
-      "title": "Podcast Nuremberg Times",
-      "location": "",
-      "start": "2026-11-24T19:30:00.000Z",
-      "end": "2026-11-24T20:30:00.000Z",
-      "allDay": false
-    },
     {
       "title": "Rhetorikschulung",
       "location": "Theresienstraße 23, 90762 Fürth",
@@ -146,6 +139,13 @@
       "location": "",
       "start": "2026-12-22T18:00:00.000Z",
       "end": "2026-12-22T19:30:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Podcast nb times",
+      "location": "",
+      "start": "2026-12-22T19:30:00.000Z",
+      "end": "2026-12-22T20:00:00.000Z",
       "allDay": false
     },
     {
