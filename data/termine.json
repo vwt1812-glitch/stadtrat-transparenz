@@ -1,20 +1,6 @@
 {
-  "updated": "2026-11-25T21:46:42.609Z",
+  "updated": "2026-11-26T13:37:36.429Z",
   "events": [
-    {
-      "title": "Sitzung des Werkausschusses Stadtentwässerung und Umweltanalytik Nürnberg SUN",
-      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
-      "start": "2026-11-26T09:00:00.000Z",
-      "end": "2026-11-26T09:30:00.000Z",
-      "allDay": false
-    },
-    {
-      "title": "Sitzung des Bau- und Vergabeausschusses\n- direkt im Anschluss an den Werkausschuss (SUN) - (ö/nö)",
-      "location": "",
-      "start": "2026-11-26T09:30:00.000Z",
-      "end": "2026-11-26T11:00:00.000Z",
-      "allDay": false
-    },
     {
       "title": "gemeinsame Sitzung des Schulausschusses u. Jugendhilfeausschusses",
       "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
@@ -510,6 +496,13 @@
       "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
       "start": "2027-11-25T13:00:00.000Z",
       "end": "2027-11-25T16:00:00.000Z",
+      "allDay": false
+    },
+    {
+      "title": "Sitzung der Sportkommission",
+      "location": "Nürnberg, Rathaus, Fünferplatz 2, Großer Sitzungssaal",
+      "start": "2027-11-26T13:00:00.000Z",
+      "end": "2027-11-26T15:00:00.000Z",
       "allDay": false
     }
   ]
